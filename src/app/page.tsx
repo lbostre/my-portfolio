@@ -1,36 +1,106 @@
-'use client';
+"use client";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
-import Project from "@/components/Project";
 import CourseRater from "@/components/Icons/CourseRater";
 import BoilerBookings from "@/components/Icons/BoilerBookings";
 import Dko from "@/components/Icons/Dko";
 import Clime from "@/components/Icons/Clime";
 import Ehv from "@/components/Icons/Ehv";
+import ProjectCard from "@/components/ProjectCard";
+import ratingsPage from "@/assets/rating_page.png";
+import courseRaterlogo from "@/assets/cr.svg";
+import climeLogo from "@/assets/clime.png";
+import climeLanding from "@/assets/landingPage.png";
+import climeChat from "@/assets/chat.png";
+import jumpseatLandingPage from "@/assets/jumpseatLandingPage.png";
+import tscHome from "@/assets/TSCHome.png";
+import DKO from "@/assets/DKO.png";
 
 export default function Home() {
-  return (
-      <main className="bg-[#fff7f0]">
-          <div className="min-h-screen p-5">
-              <div className="bg-[#f5d7e7] h-[95vh] p-24">
-                  <div className="w-[65%] text-[#0a2716] ">
-                      <p className="text-[110px] leading-tight">Hi, my <br/> name is <span
-                          className="font-bold">Leyton.</span></p>
-                      <p className="text-[40px] mt-8">I am a <span
-                          className="font-bold">computer engineering student</span> from Long Beach, California.</p>
-                  </div>
-              </div>
-          </div>
-          <div className="min-h-screen bg-[#fff7f0] text-[#0a2716] px-64 pb-10">
-              <p className="text-[70px] font-bold mb-8">My Projects</p>
-              <div className="flex flex-col gap-10">
-                  <Project  onClick={console.log("breh")}  description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Adipiscing enim eu  turpis egestas pretium aenean. Quis varius quam quisque id diam." title="Course Rater" icon={<CourseRater/>}/>
-                  <Project  onClick={console.log("breh")}  description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Adipiscing enim eu  turpis egestas pretium aenean. Quis varius quam quisque id diam." title="Boiler Bookings" icon={<BoilerBookings/>}/>
-                  <Project  onClick={console.log("breh")}  description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Adipiscing enim eu  turpis egestas pretium aenean. Quis varius quam quisque id diam." title="Deaf Kids Code - DKO" icon={<Dko/>}/>
-                  <Project  onClick={console.log("breh")}  description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Adipiscing enim eu  turpis egestas pretium aenean. Quis varius quam quisque id diam." title="Deaf Kids Code - CLIME" icon={<Clime/>}/>
-                  <Project  onClick={console.log("breh")}  description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Adipiscing enim eu  turpis egestas pretium aenean. Quis varius quam quisque id diam." title="Earth History Visualization" icon={<Ehv/>}/>
-              </div>
-          </div>
-      </main>
-  );
+    return (
+        <main className="bg-[#f9fcf6]">
+            <div className="min-h-screen p-5">
+                <div className="bg-emerald-800 h-[95vh] p-24">
+                    <div className="w-[65%] text-white ">
+                        <p className="text-[110px] leading-tight">
+                            Hi, my <br /> name is{" "}
+                            <span className="font-bold">Leyton.</span>
+                        </p>
+                        <p className="text-[40px] mt-8">
+                            I am a{" "}
+                            <span className="font-bold">
+                                computer engineering student
+                            </span>{" "}
+                            from Long Beach, California.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="min-h-screen bg-white text-emerald-950 px-64 pb-10">
+                <h1 className="text-[50px] font-bold">Projects</h1>
+                <p className="text-lg  mb-8">
+                    Various projects for organizations like EPICS @ Purdue and
+                    personal projects like Course Rater.
+                </p>
+                <div className="flex flex-row flex-wrap gap-8 justify-center">
+                    <div className="flex flex-col gap-8">
+                        <ProjectCard
+                            onClick={console.log("breh")}
+                            description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                            title="Course Rater"
+                            imageBackground="bg-gradient-to-r from-[#5ed0de] via-[#e45e8c] to-[#e1b65e]"
+                            layout={1}
+                            imageOne={ratingsPage}
+                            date="June 2022 - Present"
+                            job="Full Stack Developer"
+                        />
+                        <ProjectCard
+                            onClick={console.log("breh")}
+                            description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                            title="Deaf Kids Code - CLIME"
+                            imageBackground="bg-gradient-to-br from-[#081b2c] via-[#3977a8] to-[#fecd40]"
+                            layout={2}
+                            imageOne={climeLanding}
+                            imageTwo={climeChat}
+                            date="Jan. 2024 - Present"
+                            job="Full Stack Developer"
+                        />
+                        <ProjectCard
+                            onClick={console.log("breh")}
+                            description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                            title="Deaf Kids Code - DKO"
+                            imageBackground="bg-gradient-to-b from-[#08c9ee] to-[#fe7c29]"
+                            layout={1}
+                            imageOne={DKO}
+                            date="Aug. 2021 - May 2022"
+                            job="Full Stack Developer"
+                        />
+                    </div>
+                    <div className="flex flex-col gap-8 mt-28">
+                        <ProjectCard
+                            onClick={console.log("breh")}
+                            description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                            title="Boiler Bookings"
+                            imageBackground="bg-gradient-to-t from-blue-800 to-blue-500"
+                            layout={1}
+                            imageOne={jumpseatLandingPage}
+                            date="Jan. 2024 - Present"
+                            job="Full Stack Developer"
+                        />
+
+                        <ProjectCard
+                            onClick={console.log("breh")}
+                            description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                            title="Earth History Visualization"
+                            imageBackground="bg-gradient-to-t from-[#27476e] to-[#2c327a]"
+                            layout={1}
+                            imageOne={tscHome}
+                            date="Jan. 2024 - Present"
+                            job="Full Stack Developer"
+                        />
+                    </div>
+                </div>
+            </div>
+        </main>
+    );
 }
