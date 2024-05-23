@@ -1,7 +1,6 @@
 import { ReactElement } from "react";
-import { FaCalendar, FaChevronRight } from "react-icons/fa";
+import { FaCalendar, FaChevronRight, FaUserTie } from "react-icons/fa";
 import Image, { StaticImageData } from "next/image";
-import { IoPersonSharp } from "react-icons/io5";
 
 type ProjectProps = {
     title?: string;
@@ -80,7 +79,7 @@ export default function ProjectCard({
                         {date}
                     </div>
                     <div className="flex flex-row items-center gap-2 text-sm bg-[#f9fcf6] w-fit p-2 rounded-md">
-                        <IoPersonSharp size={16} />
+                        <FaUserTie size={16} />
                         {job}
                     </div>
                 </div>

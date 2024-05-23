@@ -46,41 +46,41 @@ export default function Home() {
                     <div className="flex flex-col gap-8">
                         <ProjectCard
                             onClick={console.log("breh")}
-                            description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                            description="A platform where Purdue University students can evaluate courses and access course analytics."
                             title="Course Rater"
                             imageBackground="bg-gradient-to-r from-[#5ed0de] via-[#e45e8c] to-[#e1b65e]"
                             layout={1}
                             imageOne={ratingsPage}
                             date="June 2022 - Present"
-                            job="Full Stack Developer"
+                            job="Project Manager, Full Stack Developer"
                         />
                         <ProjectCard
                             onClick={console.log("breh")}
-                            description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                            description="A mobile application prioritizing factory safety through audio classification and streamlining communication processes."
                             title="Deaf Kids Code - CLIME"
                             imageBackground="bg-gradient-to-br from-[#081b2c] via-[#3977a8] to-[#fecd40]"
                             layout={2}
                             imageOne={climeLanding}
                             imageTwo={climeChat}
                             date="Jan. 2024 - Present"
-                            job="Full Stack Developer"
+                            job="Frontend Team Lead, Full Stack Developer"
                         />
                         <ProjectCard
                             onClick={console.log("breh")}
-                            description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                            description="Advocate for ASL on Khan Academy and standardize video creation, submission, review, and approval processes."
                             title="Deaf Kids Code - DKO"
                             imageBackground="bg-gradient-to-b from-[#08c9ee] to-[#fe7c29]"
                             layout={1}
                             imageOne={DKO}
                             date="Aug. 2021 - May 2022"
-                            job="Full Stack Developer"
+                            job="Full Stack Developer, Web Master"
                         />
                     </div>
                     <div className="flex flex-col gap-8 mt-28">
                         <ProjectCard
                             onClick={console.log("breh")}
-                            description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
-                            title="Boiler Bookings"
+                            description="Optimal flights to Purdue synced with shuttles, friend connections, and cost-saving flight monitoring."
+                            title="Jumpseat"
                             imageBackground="bg-gradient-to-t from-blue-800 to-blue-500"
                             layout={1}
                             imageOne={jumpseatLandingPage}
@@ -90,7 +90,7 @@ export default function Home() {
 
                         <ProjectCard
                             onClick={console.log("breh")}
-                            description="Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                            description="Enhancing accessibility to Earth's history through an evolved TimeScale Creator visualization tool."
                             title="Earth History Visualization"
                             imageBackground="bg-gradient-to-t from-[#27476e] to-[#2c327a]"
                             layout={1}
