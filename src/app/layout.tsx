@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import {Playfair_Display } from "next/font/google";
+import { Lora } from "next/font/google";
 import "./globals.css";
 
-const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
+const lora = Lora({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-lora",
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Leyton Bostre",
@@ -16,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={playfairDisplay.className}>{children}</body>
+      <body className={lora.className}>{children}</body>
     </html>
   );
 }
