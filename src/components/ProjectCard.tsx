@@ -1,11 +1,12 @@
 import { ReactElement } from "react";
 import { FaCalendar, FaChevronRight, FaUserTie } from "react-icons/fa";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 type ProjectProps = {
     title?: string;
     description?: string;
-    onClick?: void;
+    onClick?: () => void;
     icon?: ReactElement;
     layout?: number;
     imageBackground?: string;
@@ -13,6 +14,7 @@ type ProjectProps = {
     imageTwo?: StaticImageData;
     date: string;
     job: string;
+    link?: string;
 };
 
 export default function ProjectCard({
@@ -25,6 +27,7 @@ export default function ProjectCard({
     imageTwo,
     date,
     job,
+    link,
 }: ProjectProps) {
     return (
         <div className="flex flex-col gap-3 border p-2 rounded-md  max-w-xl bg-white shadow-[0_35px_60px_-15px_rgba(0,_0,_0,_0.1)] transition-[height] duration-300 relative overflow-hidden group">
@@ -86,13 +89,15 @@ export default function ProjectCard({
                 <p className="text-[30px] font-extrabold">{title}</p>
                 <p className="text-lg text-[#426654]">{description}</p>
             </div>
-            <div
-                className="flex flex-row items-center gap-2 ml-5 absolute bottom-0 font-semibold transition-[transform,opacity] duration-300 text-emerald-700 cursor-pointer hover:text-emerald-950 opacity-0 group-hover:-translate-y-4 group-hover:opacity-100"
-                onClick={() => console.log("breh")}
-            >
-                <p>Learn more</p>
-                <FaChevronRight size={12} className="mt-[1px]" />
-            </div>
+            <Link href={link ? link : "/"}>
+                <div
+                    className="flex flex-row items-center gap-2 ml-5 absolute bottom-0 font-semibold transition-[transform,opacity] duration-300 text-emerald-700 cursor-pointer hover:text-emerald-950 opacity-0 group-hover:-translate-y-4 group-hover:opacity-100"
+                    onClick={onClick}
+                >
+                    <p>Learn more</p>
+                    <FaChevronRight size={12} className="mt-[1px]" />
+                </div>
+            </Link>
         </div>
     );
 }

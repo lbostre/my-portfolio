@@ -1,15 +1,6 @@
 "use client";
-import Image from "next/image";
-import Button from "@/components/Button/Button";
-import CourseRater from "@/components/Icons/CourseRater";
-import BoilerBookings from "@/components/Icons/BoilerBookings";
-import Dko from "@/components/Icons/Dko";
-import Clime from "@/components/Icons/Clime";
-import Ehv from "@/components/Icons/Ehv";
 import ProjectCard from "@/components/ProjectCard";
 import ratingsPage from "@/assets/rating_page.png";
-import courseRaterlogo from "@/assets/cr.svg";
-import climeLogo from "@/assets/clime.png";
 import climeLanding from "@/assets/landingPage.png";
 import climeChat from "@/assets/chat.png";
 import jumpseatLandingPage from "@/assets/jumpseatLandingPage.png";
@@ -45,7 +36,6 @@ export default function Home() {
                 <div className="flex flex-row flex-wrap gap-8 justify-center">
                     <div className="flex flex-col gap-8">
                         <ProjectCard
-                            onClick={console.log("breh")}
                             description="A platform where Purdue University students can evaluate courses and access course analytics."
                             title="Course Rater"
                             imageBackground="bg-gradient-to-r from-[#5ed0de] via-[#e45e8c] to-[#e1b65e]"
@@ -53,9 +43,10 @@ export default function Home() {
                             imageOne={ratingsPage}
                             date="June 2022 - Present"
                             job="Project Manager, Full Stack Developer"
+                            link="/course-rater"
                         />
                         <ProjectCard
-                            onClick={console.log("breh")}
+                            onClick={() => console.log("breh")}
                             description="A mobile application prioritizing factory safety through audio classification and streamlining communication processes."
                             title="Deaf Kids Code - CLIME"
                             imageBackground="bg-gradient-to-br from-[#081b2c] via-[#3977a8] to-[#fecd40]"
@@ -66,7 +57,7 @@ export default function Home() {
                             job="Frontend Team Lead, Full Stack Developer"
                         />
                         <ProjectCard
-                            onClick={console.log("breh")}
+                            onClick={() => console.log("breh")}
                             description="Advocate for ASL on Khan Academy and standardize video creation, submission, review, and approval processes."
                             title="Deaf Kids Code - DKO"
                             imageBackground="bg-gradient-to-b from-[#08c9ee] to-[#fe7c29]"
@@ -78,7 +69,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col gap-8 mt-28">
                         <ProjectCard
-                            onClick={console.log("breh")}
+                            onClick={() => console.log("breh")}
                             description="Optimal flights to Purdue synced with shuttles, friend connections, and cost-saving flight monitoring."
                             title="Jumpseat"
                             imageBackground="bg-gradient-to-t from-blue-800 to-blue-500"
@@ -89,7 +80,7 @@ export default function Home() {
                         />
 
                         <ProjectCard
-                            onClick={console.log("breh")}
+                            onClick={() => console.log("breh")}
                             description="Enhancing accessibility to Earth's history through an evolved TimeScale Creator visualization tool."
                             title="Earth History Visualization"
                             imageBackground="bg-gradient-to-t from-[#27476e] to-[#2c327a]"
