@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       animation: {
         tilt: "tilt 10s infinite linear",
+        'spin-slow': 'spin 60s linear infinite',
       },
       keyframes: {
         tilt: {

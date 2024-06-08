@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { Lora } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import { NavBar } from '@/app/NavBar';
+import Footer from '@/app/Footer';
 
-const lora = Lora({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-lora",
-  weight: ["400", "500", "600", "700"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Leyton Bostre",
@@ -21,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lora.className}>{children}</body>
+      <body style={inter.style} className="flex flex-col">
+        <NavBar/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }

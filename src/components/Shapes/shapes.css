@@ -1,0 +1,91 @@
+/* Hexagon */
+.hexagon {
+    width: 100px;
+    height: 55px;
+    background: #F5E579;
+    position: relative;
+    transform: rotate(90deg);
+}
+
+.hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+    top: -25px;
+    border-bottom: 25px solid #F5E579;
+}
+
+.hexagon:after {
+    bottom: -25px;
+    border-top: 25px solid #F5E579;
+}
+
+
+
+/* Triangle */
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 27.5px 46.8px 27.5px;
+    border-color: transparent transparent #3BB273 transparent;
+    transition: ease 0.5s;
+}
+
+
+/* Diamond */
+.diamond {
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    border-bottom: 46px solid #839ebd;
+    position: relative;
+    transition: ease 0.65s;
+}
+
+.diamond:before {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 46px;
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    border-top: 46px solid #839ebd;
+}
+
+/* Diamond Narrow */
+.diamond-narrow {
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-bottom: 52px solid #304c89;
+    position: relative;
+    transition: ease 0.65s;
+}
+
+.diamond-narrow:before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 52px;
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-top: 52px solid #304c89;
+}
+
+/* Square */
+.square {
+    width: 55px;
+    height: 55px;
+    background: #DD462C;
+    transition: ease .8s;
+}
