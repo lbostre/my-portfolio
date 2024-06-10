@@ -5,7 +5,10 @@ import { Flower } from '@/components/Flower';
 import { IoTriangle } from 'react-icons/io5';
 import CourseRater from "../assets/rating_page.png"
 import Jumpseat from "../assets/jumpseatLandingPage.png"
+import CLIMELandingPage from "../assets/CLIME_Landing_page.png"
+import CLIMEChat from "../assets/CLIME_Chat.png"
 import { ImDiamonds } from 'react-icons/im';
+import { BsFillSuitDiamondFill } from 'react-icons/bs';
 
 export default function Home() {
     return (
@@ -30,6 +33,11 @@ export default function Home() {
                         pretium
                         fusce." icon={<ImDiamonds size={40}/>} title={'Jumpseat'}
                                 subtitle={'FULL STACK WEBSITE'} image={Jumpseat}/>
+                <ProjectDisplay color="#839ebd" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
+                        nec feugiat nisl
+                        pretium
+                        fusce." icon={<BsFillSuitDiamondFill size={40}/>} title={'CLIME'}
+                                subtitle={'APP'} image={CLIMELandingPage} image2={CLIMEChat} type="app"/>
                 <div className="h-[1px] w-[92%] bg-gray-300"/>
             </div>
         </main>

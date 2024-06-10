@@ -11,9 +11,20 @@ type ProjectDisplayProps = {
     description: string;
     color: string;
     image: StaticImageData;
+    image2?: StaticImageData;
+    type?: "app" | "website"
 }
 
-export default function ProjectDisplay({ icon, title, subtitle, description, color, image }: ProjectDisplayProps) {
+export default function ProjectDisplay({
+                                           icon,
+                                           title,
+                                           subtitle,
+                                           description,
+                                           color,
+                                           image,
+                                           image2,
+                                           type = "website"
+                                       }: ProjectDisplayProps) {
     return (
         <div className="w-full flex flex-col items-center">
             <div className="h-[1px] w-[92%] bg-gray-300"/>
@@ -45,7 +56,7 @@ export default function ProjectDisplay({ icon, title, subtitle, description, col
                         </Link>
                     </div>
                 </div>
-                <div
+                {type == "website" && <div
                     className="h-fit w-fit border-8 border-black rounded-3xl overflow-clip p-5 bg-white self-center mt-8 shadow-2xl">
                     <Image
                         src={image}
@@ -54,7 +65,39 @@ export default function ProjectDisplay({ icon, title, subtitle, description, col
                         alt={title}
                         className="h-fit rounded-lg"
                     />
-                </div>
+                </div>}
+                {type == "app" &&
+                    <div className="flex flex-row justify-center gap-14">
+                        <div
+                            className="h-fit w-fit border-[6px] border-black rounded-3xl overflow-clip bg-white self-center mt-8 shadow-2xl relative flex justify-center items-center">
+                            <div>
+                                <div
+                                    className="h-3 w-32 bg-black absolute top-0 left-1/2 transform -translate-x-1/2 rounded-b-md"/>
+                                <Image
+                                    src={image}
+                                    height={490}
+                                    width={255}
+                                    alt={title}
+                                    className="h-fit"
+                                />
+                            </div>
+                        </div>
+                        <div
+                            className="h-fit w-fit border-[6px] border-black rounded-3xl overflow-clip bg-white self-center mt-8 shadow-2xl relative flex justify-center items-center">
+                            <div>
+                                <div
+                                    className="h-3 w-32 bg-black absolute top-0 left-1/2 transform -translate-x-1/2 rounded-b-md"/>
+                                <Image
+                                    src={image2!}
+                                    height={490}
+                                    width={255}
+                                    alt={title}
+                                    className="h-fit"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     );
