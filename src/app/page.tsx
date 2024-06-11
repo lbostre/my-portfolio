@@ -1,14 +1,11 @@
 "use client";
 
-import ProjectDisplay from '@/components/ProjectDisplay';
 import { Flower } from '@/components/Flower';
 import { IoTriangle } from 'react-icons/io5';
 import CourseRater from "../assets/rating_page.png"
-import Jumpseat from "../assets/jumpseatLandingPage.png"
-import CLIMELandingPage from "../assets/CLIME_Landing_page.png"
-import CLIMEChat from "../assets/CLIME_Chat.png"
-import { ImDiamonds } from 'react-icons/im';
-import { BsFillSuitDiamondFill } from 'react-icons/bs';
+import CourseRaterMobile from "../assets/course_rater_mobile.jpg"
+
+import ProjectDisplayWeb from '@/components/ProjectDisplayWeb';
 
 export default function Home() {
     return (
@@ -23,21 +20,34 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
-                <ProjectDisplay color="#3bb273" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
+                <ProjectDisplayWeb color="#3bb273" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
                         nec feugiat nisl
                         pretium
                         fusce." icon={<IoTriangle size={36}/>} title={'Course Rater'}
-                                subtitle={'FULL STACK WEBSITE'} image={CourseRater}/>
-                <ProjectDisplay color="#304c89" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
-                        nec feugiat nisl
-                        pretium
-                        fusce." icon={<ImDiamonds size={40}/>} title={'Jumpseat'}
-                                subtitle={'FULL STACK WEBSITE'} image={Jumpseat}/>
-                <ProjectDisplay color="#839ebd" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
-                        nec feugiat nisl
-                        pretium
-                        fusce." icon={<BsFillSuitDiamondFill size={40}/>} title={'CLIME'}
-                                subtitle={'APP'} image={CLIMELandingPage} image2={CLIMEChat} type="app"/>
+                                   subtitle={'PROJECT MANAGER & FULL STACK DEVELOPER'} image={CourseRater}
+                                   image2={CourseRaterMobile}/>
+                {/*<ProjectDisplay color="#304c89" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor*/}
+                {/*        nec feugiat nisl*/}
+                {/*        pretium*/}
+                {/*        fusce." icon={<ImDiamonds size={40}/>} title={'Jumpseat'}*/}
+                {/*                subtitle={'FULL STACK WEBSITE'} image={Jumpseat} image2={JumpseatMobile}/>*/}
+                {/*<ProjectDisplay color="#839ebd" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor*/}
+                {/*        nec feugiat nisl*/}
+                {/*        pretium*/}
+                {/*        fusce." icon={<BsFillSuitDiamondFill size={40}/>} title={'CLIME'}*/}
+                {/*                subtitle={'APP'} image={CLIMELandingPage} image2={CLIMEChat} type="app"/>*/}
+                {/*<ProjectDisplay color="#F5E579" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor*/}
+                {/*        nec feugiat nisl*/}
+                {/*        pretium*/}
+                {/*        fusce." icon={<MdHexagon size={40}/>} title={'Earth History Visualization'}*/}
+                {/*                subtitle={'FULL STACK WEBSITE'} image={TSCHome}*/}
+                {/*                type="website"/>*/}
+                {/*<ProjectDisplay color="#dd462c" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor*/}
+                {/*        nec feugiat nisl*/}
+                {/*        pretium*/}
+                {/*        fusce." icon={<FaDiamond size={40}/>} title={'Deaf Kids Code'}*/}
+                {/*                subtitle={'FULL STACK WEBSITE'} image={DKO}*/}
+                {/*                type="website"/>*/}
                 <div className="h-[1px] w-[92%] bg-gray-300"/>
             </div>
         </main>
