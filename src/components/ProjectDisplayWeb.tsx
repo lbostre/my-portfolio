@@ -13,6 +13,7 @@ type ProjectDisplayWebProps = {
     color: string;
     image: StaticImageData;
     image2?: StaticImageData;
+    url: string;
     type?: 1 | 2
 }
 
@@ -29,6 +30,7 @@ export default function ProjectDisplayWeb({
                                               color,
                                               image,
                                               image2,
+                                              url,
                                               type = 1
                                           }: ProjectDisplayWebProps) {
     const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
@@ -76,7 +78,8 @@ export default function ProjectDisplayWeb({
                         </Link>
                     </div>
                 </div>
-                <a href="/course-rater" className="relative">
+
+                {type == 1 && <Link href={"http://localhost:3000/" + url} className="relative">
                     <FaHandPointer size={90}
                                    style={{ left: `${position.x - 455}px`, top: `${position.y - 300}px`, color }}
                                    className="follow-icon"/>
@@ -106,7 +109,26 @@ export default function ProjectDisplayWeb({
                             </div>
                         </div>
                     </div>
-                </a>
+                </Link>
+                }
+                {type == 2 && <Link href={"http://localhost:3000/" + url} className="relative">
+                    <FaHandPointer size={90}
+                                   style={{ left: `${position.x - 455}px`, top: `${position.y - 300}px`, color }}
+                                   className="follow-icon"/>
+                    <div className="flex flex-col">
+                        <div
+                            className={`h-fit w-fit border-8 border-black rounded-3xl overflow-clip bg-white self-center mt-8 shadow-2xl ${title == "Course Rater" ? "py-3" : ""}`}>
+                            <Image
+                                src={image}
+                                height={500}
+                                width={800}
+                                alt={title}
+                                className="h-fit rounded-lg"
+                            />
+                        </div>
+                    </div>
+                </Link>
+                }
             </div>
         </div>
     );

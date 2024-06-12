@@ -1,0 +1,10 @@
+#button {
+    border: 2px solid black;
+    box-shadow: 4px 4px #000000;
+    color: black;
+}
+
+#button:active {
+    transform: translateY(2px) translateX(2px);
+    box-shadow: 2px 2px #000000;
+}

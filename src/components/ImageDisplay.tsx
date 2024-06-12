@@ -28,7 +28,7 @@ export function ImageDisplay({ image, alt, description, className }: ImageDispla
                     />
                 </MacScrollbar>
             </div>
-            <p className="bg-transparent mt-1 ml-1">{description}</p>
+            <p className="bg-transparent mt-1 ml-1 max-w-[960px]">{description}</p>
         </div>
     );
 }
