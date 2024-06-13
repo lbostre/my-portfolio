@@ -9,6 +9,7 @@ import DKO from "../assets/DKO.png"
 import ProjectDisplayWeb from '@/components/ProjectDisplayWeb';
 import { CiFaceSmile } from 'react-icons/ci';
 import { FaDiamond } from 'react-icons/fa6';
+import { MouseTracker } from '@/components/MouseTracker';
 
 export default function Home() {
     return (

@@ -4,6 +4,7 @@ import { ReactElement, useEffect, useState } from 'react';
 
 import "./ProjectDisplay.css";
 import { FaHandPointer } from 'react-icons/fa6';
+import { MouseTracker } from '@/components/MouseTracker';
 
 type ProjectDisplayWebProps = {
     icon: ReactElement;
@@ -34,7 +35,7 @@ export default function ProjectDisplayWeb({
                                               type = 1
                                           }: ProjectDisplayWebProps) {
     const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
-
+    const [target, setTarget] = useState<String | null>(null);
     useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
             setPosition({ x: e.clientX, y: e.clientY });
@@ -80,10 +81,10 @@ export default function ProjectDisplayWeb({
                 </div>
 
                 {type == 1 && <Link href={"http://localhost:3000/" + url} className="relative">
-                    <FaHandPointer size={90}
-                                   style={{ left: `${position.x - 455}px`, top: `${position.y - 300}px`, color }}
-                                   className="follow-icon"/>
-                    <div className="relative">
+                    {target && <MouseTracker offset={{ x: -48, y: -48 }}>
+                        <FaHandPointer size={90} style={{ color }}/></MouseTracker>}
+                    <div className="relative" onMouseEnter={() => setTarget('display')}
+                         onMouseLeave={() => setTarget(null)}>
                         <div
                             className={`h-fit w-fit border-8 border-black rounded-3xl overflow-clip bg-white self-center mt-8 shadow-2xl ${title == "Course Rater" ? "py-3" : ""}`}>
                             <Image
@@ -112,10 +113,10 @@ export default function ProjectDisplayWeb({
                 </Link>
                 }
                 {type == 2 && <Link href={"http://localhost:3000/" + url} className="relative">
-                    <FaHandPointer size={90}
-                                   style={{ left: `${position.x - 455}px`, top: `${position.y - 300}px`, color }}
-                                   className="follow-icon"/>
-                    <div className="flex flex-col">
+                    {target && <MouseTracker offset={{ x: -48, y: -48 }}>
+                        <FaHandPointer size={90} style={{ color }}/></MouseTracker>}
+                    <div className="flex flex-col" onMouseEnter={() => setTarget('display')}
+                         onMouseLeave={() => setTarget(null)}>
                         <div
                             className={`h-fit w-fit border-8 border-black rounded-3xl overflow-clip bg-white self-center mt-8 shadow-2xl ${title == "Course Rater" ? "py-3" : ""}`}>
                             <Image
