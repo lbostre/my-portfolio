@@ -47,7 +47,7 @@ export default function ProjectDisplayWeb({
                     </div>
                     <div className="flex flex-col max-w-[460px]">
                         <p className="text-2xl">{description}</p>
-                        <Link href={"http://localhost:3000/" + url}
+                        <Link href={url}
                               className="flex flex-row items-center gap-3 h-fit mt-4 cursor-pointer w-fit button button-arrow"
                               style={{ color }}>
                             <span className="text-black text-lg font-semibold">View Project</span>
@@ -65,7 +65,7 @@ export default function ProjectDisplayWeb({
                     </div>
                 </div>
 
-                {type == 1 && <Link href={"http://localhost:3000/" + url} className="relative">
+                {type == 1 && <Link href={url} className="relative">
                     {target && <MouseTracker offset={{ x: -48, y: -48 }}>
                         <FaHandPointer size={90} style={{ color }}/></MouseTracker>}
                     <div className="relative" onMouseEnter={() => setTarget('display')}
@@ -97,7 +97,7 @@ export default function ProjectDisplayWeb({
                     </div>
                 </Link>
                 }
-                {type == 2 && <Link href={"http://localhost:3000/" + url} className="relative">
+                {type == 2 && <Link href={url} className="relative">
                     {target && <MouseTracker offset={{ x: -48, y: -48 }}>
                         <FaHandPointer size={90} style={{ color }}/></MouseTracker>}
                     <div className="flex flex-col" onMouseEnter={() => setTarget('display')}
