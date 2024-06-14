@@ -21,7 +21,6 @@ import Mongo from "../../assets/Logos/mongodb.png"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-import "./button.css"
 import Image from 'next/image';
 
 export default function CourseRaterPage() {

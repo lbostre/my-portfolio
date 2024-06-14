@@ -48,7 +48,7 @@ export default function Projects() {
                     pretium
                     fusce." icon={<FaDiamond size={40}/>} title={'Deaf Kids Outreach'}
                                subtitle={'FULL STACK WEBSITE'} image={DKO}
-                               type={2} url="deaf-kids-outreach"/>
+                               type={2} url="dko"/>
         </div>
     )
 }
