@@ -38,18 +38,3 @@
 a:hover {
     opacity: 0.8;
 }
-
-a:hover .follow-icon {
-    opacity: 1;
-}
-
-.follow-icon {
-    opacity: 0;
-    max-width: 400px;
-    box-sizing: border-box;
-    transition: ease 0.2s;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    object-fit: cover;
-}

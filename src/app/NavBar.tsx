@@ -53,7 +53,7 @@ export function NavBar() {
             </h2>
             <div className="flex flex-row items-center text-lg gap-7 font-medium">
                 <NavLink href="/">Home</NavLink>
-                <NavLink href="/">Projects</NavLink>
+                <NavLink href="/projects">Projects</NavLink>
                 <NavLink href="/about">About</NavLink>
             </div>
         </header>

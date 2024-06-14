@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import { ReactElement, useEffect, useState } from 'react';
+import React, { ReactElement, useState } from 'react';
 
 import "./ProjectDisplay.css";
 import { FaHandPointer } from 'react-icons/fa6';
@@ -16,11 +16,7 @@ type ProjectDisplayWebProps = {
     image2?: StaticImageData;
     url: string;
     type?: 1 | 2
-}
-
-interface Position {
-    x: number;
-    y: number;
+    ref?: React.Ref<any>;
 }
 
 export default function ProjectDisplayWeb({
@@ -32,24 +28,13 @@ export default function ProjectDisplayWeb({
                                               image,
                                               image2,
                                               url,
-                                              type = 1
+                                              type = 1,
+                                              ref
                                           }: ProjectDisplayWebProps) {
-    const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
     const [target, setTarget] = useState<String | null>(null);
-    useEffect(() => {
-        const handleMouseMove = (e: MouseEvent) => {
-            setPosition({ x: e.clientX, y: e.clientY });
-        };
-
-        document.addEventListener('mousemove', handleMouseMove);
-        return () => {
-            document.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
-
 
     return (
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center" ref={ref}>
             <div className="h-[1px] w-[92%] bg-gray-300"/>
             <div className="flex flex-col text-black w-full py-20 max-w-[1000px]">
                 <div className="flex flex-row justify-between">
@@ -62,7 +47,7 @@ export default function ProjectDisplayWeb({
                     </div>
                     <div className="flex flex-col max-w-[460px]">
                         <p className="text-2xl">{description}</p>
-                        <Link href="/"
+                        <Link href={"http://localhost:3000/" + url}
                               className="flex flex-row items-center gap-3 h-fit mt-4 cursor-pointer w-fit button button-arrow"
                               style={{ color }}>
                             <span className="text-black text-lg font-semibold">View Project</span>

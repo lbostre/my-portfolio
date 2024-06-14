@@ -5,6 +5,7 @@
     background: #F5E579;
     position: relative;
     transform: rotate(90deg);
+    transition: ease 0.5s;
 }
 
 .hexagon:before, .hexagon:after {
@@ -26,7 +27,6 @@
     bottom: -25px;
     border-top: 25px solid #F5E579;
 }
-
 
 
 /* Triangle */
