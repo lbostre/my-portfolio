@@ -3,8 +3,6 @@ import Link from 'next/link';
 import { ReactElement, useEffect, useState } from 'react';
 
 import "./ProjectDisplay.css";
-import { FaRegHandPointer } from 'react-icons/fa';
-import { LiaHandPointer } from 'react-icons/lia';
 
 type ProjectDisplayAppProps = {
     icon: ReactElement;
@@ -14,12 +12,9 @@ type ProjectDisplayAppProps = {
     color: string;
     image: StaticImageData;
     image2?: StaticImageData;
+    url: string;
 }
 
-interface Position {
-    x: number;
-    y: number;
-}
 
 export default function ProjectDisplayApp({
                                               icon,
@@ -29,19 +24,8 @@ export default function ProjectDisplayApp({
                                               color,
                                               image,
                                               image2,
+                                              url
                                           }: ProjectDisplayAppProps) {
-    const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
-
-    useEffect(() => {
-        const handleMouseMove = (e: MouseEvent) => {
-            setPosition({ x: e.clientX, y: e.clientY });
-        };
-
-        document.addEventListener('mousemove', handleMouseMove);
-        return () => {
-            document.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
 
 
     return (

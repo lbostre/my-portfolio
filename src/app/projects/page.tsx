@@ -32,11 +32,11 @@ export default function Projects() {
                     fusce." icon={<ImDiamonds size={40}/>} title={'Jumpseat'}
                                subtitle={'FULL STACK WEBSITE'} image={Jumpseat} image2={JumpseatMobile}
                                url={"/jumpseat"}/>
-            {/*<ProjectDisplayApp color="#839ebd" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor*/}
-            {/*        nec feugiat nisl*/}
-            {/*        pretium*/}
-            {/*        fusce." icon={<BsFillSuitDiamondFill size={40}/>} title={'CLIME'}*/}
-            {/*                   subtitle={'APP'} image={CLIMELandingPage} image2={CLIMEChat} url={"clime"}/>*/}
+            <ProjectDisplayApp color="#839ebd" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
+                    nec feugiat nisl
+                    pretium
+                    fusce." icon={<BsFillSuitDiamondFill size={40}/>} title={'CLIME'}
+                               subtitle={'APP'} image={CLIMELandingPage} image2={CLIMEChat} url={"clime"}/>
             <ProjectDisplayWeb color="#F5E579" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
                     nec feugiat nisl
                     pretium

@@ -1,5 +1,6 @@
 // Icons
 import { MdHexagon } from 'react-icons/md';
+import Link from 'next/link';
 
 
 export default function Footer() {
@@ -11,10 +12,10 @@ export default function Footer() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-x-12 gap-y-4 mb-14 text-lg font-semibold ml-14">
-                    <h5>LinkedIn</h5>
-                    <h5>GitHub</h5>
-                    <h5>Email</h5>
-                    <h5>Resume</h5>
+                    <Link target={"_blank"} href={"https://www.linkedin.com/in/leytonbostre/"}>LinkedIn</Link>
+                    <Link target={"_blank"} href={"https://github.com/lbostre"}>GitHub</Link>
+                    <Link href={"mailto:ldbostre@gmail.com"}>Email</Link>
+                    <Link target={"_blank"} href={"/"}>Resume</Link>
                 </div>
             </div>
         </footer>
