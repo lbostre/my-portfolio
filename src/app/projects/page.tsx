@@ -36,7 +36,7 @@ export default function Projects() {
                     nec feugiat nisl
                     pretium
                     fusce." icon={<BsFillSuitDiamondFill size={40}/>} title={'CLIME'}
-                               subtitle={'APP'} image={CLIMELandingPage} image2={CLIMEChat} url={"clime"}/>
+                               subtitle={'APP'} image={CLIMELandingPage} image2={CLIMEChat} url={"/clime"}/>
             <ProjectDisplayWeb color="#F5E579" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
                     nec feugiat nisl
                     pretium
