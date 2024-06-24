@@ -1,9 +1,5 @@
 "use client";
 import React from "../../../public/Logos/react.svg"
-import CLIMELandingPage from "../../../public/CLIME/CLIME_Landing_page.png"
-import CLIMEChat from "../../../public/CLIME/CLIME_chat.png"
-import Alarm from "../../../public/CLIME/alarms.png"
-import SwipeAlarm from "../../../public/CLIME/swipe_alarm.png"
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -24,7 +20,7 @@ export default function CLIMEPage() {
                         <div
                             className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
                         <Image
-                            src={CLIMELandingPage}
+                            src="/CLIME/CLIME_Landing_page.png"
                             height={490}
                             width={255}
                             alt={"Clime landing page"}
@@ -39,7 +35,7 @@ export default function CLIMEPage() {
                         <div
                             className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
                         <Image
-                            src={CLIMEChat}
+                            src="/CLIME/CLIME_chat.png"
                             height={490}
                             width={255}
                             alt={"Chat page"}
@@ -108,7 +104,7 @@ export default function CLIMEPage() {
                                 <div
                                     className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
                                 <Image
-                                    src={Alarm}
+                                    src="/CLIME/alarms.png"
                                     height={490}
                                     width={255}
                                     alt={"Clime landing page"}
@@ -123,7 +119,7 @@ export default function CLIMEPage() {
                                 <div
                                     className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
                                 <Image
-                                    src={SwipeAlarm}
+                                    src="/CLIME/swipe_alarm.png"
                                     height={490}
                                     width={255}
                                     alt={"Chat page"}
@@ -146,7 +142,7 @@ export default function CLIMEPage() {
                                 <div
                                     className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
                                 <Image
-                                    src={CLIMELandingPage}
+                                    src="/CLIME/CLIME_Landing_page.png"
                                     height={490}
                                     width={255}
                                     alt={"Clime landing page"}
@@ -161,7 +157,7 @@ export default function CLIMEPage() {
                                 <div
                                     className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
                                 <Image
-                                    src={CLIMEChat}
+                                    src="/CLIME/CLIME_Chat.png"
                                     height={490}
                                     width={255}
                                     alt={"Chat page"}
