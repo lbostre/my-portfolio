@@ -2,19 +2,19 @@
 
 import ProjectDisplayWeb from '@/components/ProjectDisplayWeb';
 import { IoTriangle } from 'react-icons/io5';
-import CourseRater from "../../assets/rating_page.png"
-import CourseRaterMobile from "../../assets/CourseRater/course_rater_mobile.jpg"
-import DKO from "../../assets/DKO.png"
+import CourseRater from "../../../public/rating_page.png"
+import CourseRaterMobile from "../../../public/CourseRater/course_rater_mobile.jpg"
+import DKO from "../../../public/DKO.png"
 import { FaDiamond } from 'react-icons/fa6';
 import { ImDiamonds } from 'react-icons/im';
 import { BsFillSuitDiamondFill } from 'react-icons/bs';
 import { MdHexagon } from 'react-icons/md';
-import Jumpseat from "../../assets/Jumpseat/jumpseatLandingPage.png"
-import JumpseatMobile from "../../assets/Jumpseat/jumpseat_blog.png"
+import Jumpseat from "../../../public/Jumpseat/jumpseatLandingPage.png"
+import JumpseatMobile from "../../../public/Jumpseat/jumpseat_blog.png"
 import ProjectDisplayApp from '@/components/ProjectDisplayApp';
-import CLIMELandingPage from "../../assets/CLIME/CLIME_Landing_page.png"
-import CLIMEChat from "../../assets/CLIME/CLIME_chat.png"
-import TSCHome from "../../assets/EVH/TSCHome.png"
+import CLIMELandingPage from "../../../public/CLIME/CLIME_Landing_page.png"
+import CLIMEChat from "../../../public/CLIME/CLIME_chat.png"
+import TSCHome from "../../../public/EVH/TSCHome.png"
 
 
 export default function Projects() {

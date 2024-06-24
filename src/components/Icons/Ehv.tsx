@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import globe from "@/assets/globe.png"
+import globe from "../../../public/globe.png"
 
 export default function Ehv() {
     return (

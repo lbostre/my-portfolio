@@ -1,4 +1,4 @@
-import React from "../../assets/Logos/react.svg"
+import React from "../../../public/Logos/react.svg"
 import { ImDiamonds } from 'react-icons/im';
 import { BiWorld } from 'react-icons/bi';
 

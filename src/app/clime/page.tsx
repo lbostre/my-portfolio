@@ -1,9 +1,9 @@
 "use client";
-import React from "../../assets/Logos/react.svg"
-import CLIMELandingPage from "../../assets/CLIME/CLIME_Landing_page.png"
-import CLIMEChat from "../../assets/CLIME/CLIME_chat.png"
-import Alarm from "../../assets/CLIME/alarms.png"
-import SwipeAlarm from "../../assets/CLIME/swipe_alarm.png"
+import React from "../../../public/Logos/react.svg"
+import CLIMELandingPage from "../../../public/CLIME/CLIME_Landing_page.png"
+import CLIMEChat from "../../../public/CLIME/CLIME_chat.png"
+import Alarm from "../../../public/CLIME/alarms.png"
+import SwipeAlarm from "../../../public/CLIME/swipe_alarm.png"
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';

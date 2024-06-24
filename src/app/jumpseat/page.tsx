@@ -1,10 +1,10 @@
 "use client";
-import React from "../../assets/Logos/react.svg"
-import LoginProto from "../../assets/DKO/loginPrototype.png"
-import LoginProto2 from "../../assets/DKO/loginboxproto2.png"
-import LoginPage from "../../assets/DKO/newLoginPage.png"
-import SignUp from "../../assets/DKO/newSignUpPage.png"
-import DKO from "../../assets/DKO.png"
+import React from "../../../public/Logos/react.svg"
+import LoginProto from "../../../public/DKO/loginPrototype.png"
+import LoginProto2 from "../../../public/DKO/loginboxproto2.png"
+import LoginPage from "../../../public/DKO/newLoginPage.png"
+import SignUp from "../../../public/DKO/newSignUpPage.png"
+import DKO from "../../../public/DKO.png"
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';

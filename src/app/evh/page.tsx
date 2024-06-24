@@ -1,21 +1,17 @@
-import React from "../../assets/Logos/react.svg"
-import LoginProto from "../../assets/DKO/loginPrototype.png"
-import LoginProto2 from "../../assets/DKO/loginboxproto2.png"
-import LoginPage from "../../assets/DKO/newLoginPage.png"
-import SignUp from "../../assets/DKO/newSignUpPage.png"
-import TSCHome from "../../assets/EVH/TSCHome.png"
-import FontOptions from "../../assets/EVH/fontmenu.png"
+import React from "../../../public/Logos/react.svg"
+import TSCHome from "../../../public/EVH/TSCHome.png"
+import FontOptions from "../../../public/EVH/fontmenu.png"
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import Image from 'next/image';
 import { MdHexagon } from 'react-icons/md';
-import java1 from "../../assets/EVH/java1.png"
-import java2 from "../../assets/EVH/java2.png"
-import java3 from "../../assets/EVH/java3.png"
-import About from "../../assets/EVH/EVHabout.png"
-import Spec from "../../assets/EVH/AboutPageSpec.png"
+import java1 from "../../../public/EVH/java1.png"
+import java2 from "../../../public/EVH/java2.png"
+import java3 from "../../../public/EVH/java3.png"
+import About from "../../../public/EVH/EVHabout.png"
+import Spec from "../../../public/EVH/AboutPageSpec.png"
 import { FaArrowTurnDown } from 'react-icons/fa6';
 import { ImageDisplay } from '@/components/ImageDisplay';
 import { IoArrowDown } from 'react-icons/io5';

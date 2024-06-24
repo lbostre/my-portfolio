@@ -1,22 +1,22 @@
 import { WebPhoneLayout } from '@/components/WebPhoneLayout';
-import CourseRater from "../../assets/rating_page.png"
-import CourseRaterMobile from "../../assets/CourseRater/course_rater_mobile.jpg"
+import CourseRater from "../../../public/rating_page.png"
+import CourseRaterMobile from "../../../public/CourseRater/course_rater_mobile.jpg"
 import { ImageDisplay } from '@/components/ImageDisplay';
-import Home from "../../assets/CourseRater/course_rater_home.png"
-import B20 from "../../assets/CourseRater/course_rater_b20.png"
-import About from "../../assets/CourseRater/course_rater_about.png"
-import Class from "../../assets/CourseRater/course_rater_class.png"
-import ScheduleRater from "../../assets/CourseRater/course_rater_schedule_rater.png"
-import ScheduleRaterOutput from "../../assets/CourseRater/course_rate_output_schedule_rater.png"
-import Microsoft from "../../assets/CourseRater/course_rater_microsoft.png"
-import NotFound from "../../assets/CourseRater/course_rater_404.png"
+import Home from "../../../public/CourseRater/course_rater_home.png"
+import B20 from "../../../public/CourseRater/course_rater_b20.png"
+import About from "../../../public/CourseRater/course_rater_about.png"
+import Class from "../../../public/CourseRater/course_rater_class.png"
+import ScheduleRater from "../../../public/CourseRater/course_rater_schedule_rater.png"
+import ScheduleRaterOutput from "../../../public/CourseRater/course_rate_output_schedule_rater.png"
+import Microsoft from "../../../public/CourseRater/course_rater_microsoft.png"
+import NotFound from "../../../public/CourseRater/course_rater_404.png"
 import Link from 'next/link';
 import { LuArrowUpRight } from 'react-icons/lu';
 import { IoTriangle } from 'react-icons/io5';
-import React from "../../assets/Logos/react.svg"
-import Express from "../../assets/Logos/express.png"
-import Node from "../../assets/Logos/nodejs.png"
-import Mongo from "../../assets/Logos/mongodb.png"
+import React from "../../../public/Logos/react.svg"
+import Express from "../../../public/Logos/express.png"
+import Node from "../../../public/Logos/nodejs.png"
+import Mongo from "../../../public/Logos/mongodb.png"
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
