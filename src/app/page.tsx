@@ -35,35 +35,6 @@ export default function Home() {
                         <p>at Purdue University.</p>
                     </div>
                 </div>
-                {/*<ProjectDisplayWeb color="#3bb273" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor*/}
-                {/*        nec feugiat nisl*/}
-                {/*        pretium*/}
-                {/*        fusce." icon={<IoTriangle size={36}/>} title={'Course Rater'}*/}
-                {/*                   subtitle={'PROJECT MANAGER & FULL STACK DEVELOPER'} image={CourseRater}*/}
-                {/*                   image2={CourseRaterMobile} url="course-rater"/>*/}
-                {/*<ProjectDisplay color="#304c89" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor*/}
-                {/*        nec feugiat nisl*/}
-                {/*        pretium*/}
-                {/*        fusce." icon={<ImDiamonds size={40}/>} title={'Jumpseat'}*/}
-                {/*                subtitle={'FULL STACK WEBSITE'} image={Jumpseat} image2={JumpseatMobile}/>*/}
-                {/*<ProjectDisplay color="#839ebd" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor*/}
-                {/*        nec feugiat nisl*/}
-                {/*        pretium*/}
-                {/*        fusce." icon={<BsFillSuitDiamondFill size={40}/>} title={'CLIME'}*/}
-                {/*                subtitle={'APP'} image={CLIMELandingPage} image2={CLIMEChat} type="app"/>*/}
-                {/*<ProjectDisplay color="#F5E579" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor*/}
-                {/*        nec feugiat nisl*/}
-                {/*        pretium*/}
-                {/*        fusce." icon={<MdHexagon size={40}/>} title={'Earth History Visualization'}*/}
-                {/*                subtitle={'FULL STACK WEBSITE'} image={TSCHome}*/}
-                {/*                type="website"/>*/}
-                {/*<ProjectDisplayWeb color="#dd462c" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor*/}
-                {/*        nec feugiat nisl*/}
-                {/*        pretium*/}
-                {/*        fusce." icon={<FaDiamond size={40}/>} title={'Deaf Kids Outreach'}*/}
-                {/*                   subtitle={'FULL STACK WEBSITE'} image={DKO}*/}
-                {/*                   type={2} url="dko"/>*/}
-                {/*<div className="h-[1px] w-[92%] bg-gray-300"/>*/}
             </div>
         </main>
     );

@@ -12,8 +12,8 @@ type ProjectDisplayAppProps = {
     subtitle: string;
     description: string;
     color: string;
-    image: StaticImageData;
-    image2?: StaticImageData;
+    image: StaticImageData | String;
+    image2?: StaticImageData | String;
     url: string;
 }
 
