@@ -6,12 +6,13 @@ import LoginPage from "../../assets/DKO/newLoginPage.png"
 import SignUp from "../../assets/DKO/newSignUpPage.png"
 import CLIMELandingPage from "../../assets/CLIME/CLIME_Landing_page.png"
 import CLIMEChat from "../../assets/CLIME/CLIME_chat.png"
+import Alarm from "../../assets/CLIME/alarms.png"
+import SwipeAlarm from "../../assets/CLIME/swipe_alarm.png"
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import Image from 'next/image';
-import { FaDiamond } from 'react-icons/fa6';
 import { useState } from 'react';
 import { IoArrowDown } from 'react-icons/io5';
 import { BsFillSuitDiamondFill } from 'react-icons/bs';
@@ -94,147 +95,208 @@ export default function CLIMEPage() {
             </div>
             <div className="flex flex-col items-center mt-8 gap-10 pt-8">
                 <div className="flex flex-col w-full gap-2 max-w-[960px]">
-                    <h3 className="text-2xl font-semibold">Background</h3>
-                    <p className="indent-8">Deaf Kids Outreach was the first "real world" project that I worked on. I
-                        got this opportunity through the Engineering Projects in Community Service program at Purdue
-                        University. This was the first project where I used React along with other website developing
-                        tools like flexbox and CSS grid.
+                    <h3 className="text-2xl font-semibold">Experience as Frontend Team Lead</h3>
+                    <p className="indent-8">As the frontend team lead, I was responsible for assigning tasks and keeping
+                        my team on track. The frontend team consisted of two other members, both of whom were new to
+                        React Native. Much of my time during lab was spent helping them fix various bugs, teaching them
+                        best practices, and making design decisions. Overall, I enjoyed being the frontend team lead
+                        because I remember being in their position, and it was gratifying to be the person who could
+                        offer support and guidance.
                     </p>
                     <p className="indent-8">Having been very inexperienced at the time, my responsibilities were to
                         create the login and signup pages.
                     </p>
                 </div>
                 <div>
-                    <div
-                        className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
-                    <Image
-                        src={CLIMELandingPage}
-                        height={490}
-                        width={255}
-                        alt={"Clime landing page"}
-                        className="h-fit"
-                    />
-                </div>
-                <div className="flex flex-row w-full max-w-[960px] gap-8">
-                    <div>
+                    <div className="flex flex-row justify-center gap-14">
                         <div
-                            className={`relative border-4 border-black rounded-3xl overflow-hidden`}>
-                            <Image
-                                src={LoginProto}
-                                height={LoginProto.height}
-                                width={LoginProto.width}
-                                alt={"login prototype"}
-                                className="w-full object-cover"
-                            />
+                            className="h-fit w-fit border-[6px] border-black rounded-[38px] overflow-clip bg-white self-center mt-8 shadow-2xl relative flex justify-center items-center"
+                        >
+                            <div>
+                                <div
+                                    className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
+                                <Image
+                                    src={Alarm}
+                                    height={490}
+                                    width={255}
+                                    alt={"Clime landing page"}
+                                    className="h-fit"
+                                />
+                            </div>
                         </div>
-                        <p className="bg-transparent mt-1 ml-1 max-w-[960px]">Login Prototype #1</p>
+                        <div
+                            className="h-fit w-fit border-[6px] border-black rounded-[38px] overflow-clip bg-white self-center mt-8 shadow-2xl relative flex justify-center items-center"
+                        >
+                            <div>
+                                <div
+                                    className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
+                                <Image
+                                    src={SwipeAlarm}
+                                    height={490}
+                                    width={255}
+                                    alt={"Chat page"}
+                                    className="h-fit"
+                                />
+                            </div>
+                        </div>
                     </div>
-                    <div className="w-[50%] flex flex-col">
-                        <h5 className="font-medium">Login Prototype #1</h5>
-                        <p className="bg-transparent indent-8"> At this stage of
-                            development, we decided
-                            against
-                            using any authentication libraries. Instead, we planned to store usernames directly and hash
-                            passwords for security purposes.</p>
-                        <h5 className="font-medium  mt-3">Login Prototype #2</h5>
-                        <p className="bg-transparent indent-8">At this stage, we had completed our first design review,
-                            presenting our progress and future plans to our partners and other reviewers. One reviewer
-                            suggested using an authentication library, which we then discussed as a team and agreed was
-                            a good idea. We chose Google's authentication due to its large user base. As a result, I
-                            implemented Google login and sign-up buttons on the login page.</p>
-                        <IoArrowDown className="self-center mt-14 text-[#dd462c] animate-bounce" size={100}/>
-                    </div>
+                    <p className="bg-transparent mt-5 ml-1 max-w-[960px]">Sample alarms page. This page
+                        displays a list
+                        of alerts for the user, including machine alarms and important announcements. I implemented a
+                        swipe-to-delete functionality on this page to enhance ease of use.</p>
                 </div>
                 <div>
-                    <div
-                        className={`relative border-4 border-black rounded-3xl overflow-hidden`}>
-                        <Image
-                            src={LoginProto2}
-                            width={960}
-                            alt={"login prototype 2"}
-                        />
+                    <div className="flex flex-row justify-center gap-14">
+                        <div
+                            className="h-fit w-fit border-[6px] border-black rounded-[38px] overflow-clip bg-white self-center mt-8 shadow-2xl relative flex justify-center items-center"
+                        >
+                            <div>
+                                <div
+                                    className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
+                                <Image
+                                    src={CLIMELandingPage}
+                                    height={490}
+                                    width={255}
+                                    alt={"Clime landing page"}
+                                    className="h-fit"
+                                />
+                            </div>
+                        </div>
+                        <div
+                            className="h-fit w-fit border-[6px] border-black rounded-[38px] overflow-clip bg-white self-center mt-8 shadow-2xl relative flex justify-center items-center"
+                        >
+                            <div>
+                                <div
+                                    className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
+                                <Image
+                                    src={CLIMEChat}
+                                    height={490}
+                                    width={255}
+                                    alt={"Chat page"}
+                                    className="h-fit"
+                                />
+                            </div>
+                        </div>
                     </div>
-                    <p className="bg-transparent mt-1 ml-1 max-w-[960px]">Login Prototype #2</p>
-                </div>
-                <div>
-                    <div
-                        className={`relative border-4 border-black rounded-3xl overflow-hidden`}>
-                        <Image
-                            src={LoginPage}
-                            width={960}
-                            alt={"login page"}
-                        />
-                    </div>
-                    <p className="bg-transparent mt-1 ml-1 max-w-[960px]">Final Login page</p>
+                    <p className="bg-transparent mt-5 ml-1 max-w-[960px]">On the left is the landing page, the page that
+                        the user first sees when logging onto the app. They have the ability to either create a group or
+                        join an already existing group. </p>
+                    <p className="bg-transparent mt-3 ml-1 max-w-[960px]">On the right is the chat page, the page that
+                        the user can use to communicate with their group. The user can tap on the red circular button to
+                        start voice recording, record a message, then tap on the red circular button again to stop
+                        recording. One neat part about the app is that the voice recording is transmitted to other users
+                        in real time, meaning that as they talk the words pop up on the users phones. No need waiting
+                        for the whole message to be recorded! </p>
                 </div>
                 <div className="max-w-[960px]">
-                    <h2 className="text-xl font-medium mb-1">Example Input Code from Sign Up Page</h2>
-                    <div className="flex flex-row items-center gap-4">
-                        <div className="border-2 border-black rounded-2xl overflow-clip bg-[#fafafa]">
-                            <SyntaxHighlighter language="javascript" style={oneLight} className="text-sm">
-                                {".textInput {\n" +
-                                    "    width: 15vw;\n" +
-                                    "    height: 5vh;\n" +
-                                    "    border-radius: 10px;\n" +
-                                    "    border: solid 2px #00cceb;\n" +
-                                    "    outline: none;\n" +
-                                    "    font-size: 16px;\n" +
-                                    "    padding-left: .3vw;\n" +
-                                    "    padding-right: .3vw;\n" +
-                                    "}\n" +
-                                    "\n" +
-                                    ".textInputLabel {\n" +
-                                    "    font-size: 14px;\n" +
-                                    "    display: block;\n" +
-                                    "    margin-left: .5vw;\n" +
-                                    "}"}
-                            </SyntaxHighlighter>
-                        </div>
-                        <div className="flex flex-col gap-4 items-center">
-                            <div
-                                className="flex flex-col items-center justify-center w-full h-max border-2 border-black rounded-2xl py-[70px]">
-                                <div className="flex flex-col items-start">
-                                    <label>First Name</label>
-                                    <input className="textInput" type="text" placeholder={""} value={firstName}
-                                           onChange={(e) => setFirstName(e.target.value)}/>
-                                </div>
-                            </div>
-                            <div className="border-2 border-black rounded-2xl overflow-clip bg-[#fafafa]">
-                                <SyntaxHighlighter language="javascript" style={oneLight} className="text-sm">
-                                    {"<div className=\"flex flex-col items-start\">\n" +
-                                        "    <label>First Name</label>\n" +
-                                        "    <input className=\"textInput\" type=\"text\" placeholder={\"\"} value={firstName}\n" +
-                                        "    onChange={(e) => setFirstName(e.target.value)}/>\n" +
-                                        "</div>"}
-                                </SyntaxHighlighter>
-                            </div>
-                        </div>
+                    <h2 className="text-xl font-medium mb-1">Connecting Other Pages to WebSocket Using Global State</h2>
+                    <div className="border-2 border-black rounded-2xl overflow-clip bg-[#fafafa]">
+                        <SyntaxHighlighter language="javascript" style={oneLight} className="text-sm">
+                            {"const GlobalStateContext = createContext(undefined);\n" +
+                                "let globalStateCreated = false;\n" +
+                                "\n" +
+                                "export const GlobalStateProvider = ({children}) => {\n" +
+                                "    // replace ip with your ip\n" +
+                                "    if(globalStateCreated){\n" +
+                                "        return\n" +
+                                "    }\n" +
+                                "    let ws = new WebSocket('ws://' + '{ip}' + '/ws/test/');\n" +
+                                "    alert(\"Created websocket\");\n" +
+                                "    globalStateCreated = true;\n" +
+                                "\n" +
+                                "    const [globalState, setGlobalState] = useState({ws: ws, pin: 0, name: \"\"});\n" +
+                                "    return (\n" +
+                                "        <GlobalStateContext.Provider value={{globalState, setGlobalState}}>\n" +
+                                "            {children}\n" +
+                                "        </GlobalStateContext.Provider>\n" +
+                                "    )\n" +
+                                "}\n" +
+                                "\n" +
+                                "export const useGlobalState = () => useContext(GlobalStateContext);\n" +
+                                "\n" +
+                                "export default function Layout() {\n" +
+                                "    return <GlobalStateProvider>\n" +
+                                "            <Stack screenOptions={{\n" +
+                                "            headerStyle:{backgroundColor:\"#0a1b2d\"},\n" +
+                                "            headerTintColor:\"#fff\",\n" +
+                                "            headerTitleStyle: {fontWeight:\"bold\", fontFamily:\"Cabin_400Regular\", fontSize:24},\n" +
+                                "        }}>\n" +
+                                "            <Stack.Screen\n" +
+                                "                name=\"alerts\"\n" +
+                                "                options={{\n" +
+                                "                    title: \"Alerts\",\n" +
+                                "                    presentation: 'modal',\n" +
+                                "                }}\n" +
+                                "            />\n" +
+                                "        </Stack>\n" +
+                                "    </GlobalStateProvider>\n" +
+                                "}"}
+                        </SyntaxHighlighter>
                     </div>
+                    <p className="bg-transparent mt-1 ml-1 max-w-[960px]">Using WebSocket as our primary communication
+                        method between the server and the client, we want to ensure there is only one instance running
+                        per device. We achieve this using global context. In the code above, we first create a provider
+                        that initializes the WebSocket instance. This provider is then wrapped around the entire app,
+                        ensuring that every page has access to the same WebSocket instance.</p>
                 </div>
-                <div>
-                    <div
-                        className={`relative border-4 border-black rounded-3xl overflow-hidden`}>
-                        <Image
-                            src={SignUp}
-                            width={960}
-                            alt={"login prototype 2"}
-                        />
+                <div className="max-w-[960px]">
+                    <h2 className="text-xl font-medium mb-1">Updating the Chat Messages State</h2>
+                    <div className="border-2 border-black rounded-2xl overflow-clip bg-[#fafafa]">
+                        <SyntaxHighlighter language="javascript" style={oneLight} className="text-sm">
+                            {"const updateMessages = (m, username, final) => {\n" +
+                                "    if(!final) {\n" +
+                                "        const newArr = [...temp];\n" +
+                                "        newArr[newArr.length - 1] = m;\n" +
+                                "        newArr.push(\"\")\n" +
+                                "        setTemp(newArr);\n" +
+                                "    } else {\n" +
+                                "        const newArr = [...temp];\n" +
+                                "        newArr[newArr.length - 1] = m;\n" +
+                                "        setTemp(newArr);\n" +
+                                "    }\n" +
+                                "    const reversedMessages = [...messages].reverse();\n" +
+                                "    let updateApplied = false;\n" +
+                                "\n" +
+                                "    for (let i = 0; i < reversedMessages.length; i++) {\n" +
+                                "        if (reversedMessages[i].user.name === username) {\n" +
+                                "            if (!updateApplied) {\n" +
+                                "                if (getDateDifferenceInSeconds(reversedMessages[i].createdAt, new Date()) > 10) {\n" +
+                                "                    const newMessage = createMessage(m, username == localParams[\"name\"] ? 1 : undefined, username)\n" +
+                                "                    reversedMessages.unshift(newMessage);\n" +
+                                "                    break;\n" +
+                                "                }\n" +
+                                "                reversedMessages[i] = {\n" +
+                                "                    ...reversedMessages[i],\n" +
+                                "                    text: m,\n" +
+                                "                    createdAt: new Date(),\n" +
+                                "                };\n" +
+                                "                updateApplied = true;\n" +
+                                "                break\n" +
+                                "            }\n" +
+                                "        }\n" +
+                                "    }\n" +
+                                "    if(!updateApplied) {\n" +
+                                "        const newMessage = createMessage(m, username == localParams[\"name\"] ? 1 : undefined, username)\n" +
+                                "        reversedMessages.unshift(newMessage);\n" +
+                                "    }\n" +
+                                "    const finalMessages = reversedMessages.reverse();\n" +
+                                "    setMessages(finalMessages);\n" +
+                                "}"}
+                        </SyntaxHighlighter>
                     </div>
-                    <p className="bg-transparent mt-1 ml-1 max-w-[960px]">Sign up page, one of the first pages I
-                        completed using CSS Grid.</p>
-                </div>
-                <div className="flex flex-col w-full gap-2 max-w-[960px]">
-                    <h3 className="text-2xl font-semibold">Takeaways</h3>
-                    <p className="indent-8">Taking this class in my first year of college significantly contributed to
-                        my learning throughout my college career. It was my first experience working with a large group
-                        on a sizable coding project. I gained valuable insights into various programming practices in
-                        web development and, more importantly, greatly enhanced my communication skills.
-                    </p>
-                    <p className="indent-8">As a young and ambitious student, I learned that large-scale projects
-                        require time and patience. Initially, I saw projects as ambitious goals to tackle head-on with
-                        friends, spending hours daily on contributions but rarely completing them. This project taught
-                        me the importance of planning, documentation, and, most importantly in my opinion, iteration.
-                    </p>
+                    <p className="bg-transparent mt-1 ml-1 max-w-[960px] indent-8">Since chat messages are stored as
+                        objects in
+                        JavaScript, we need to store them in a state to keep the object continuously updated. The
+                        parameters for this function are the message itself (m), the username of the sender (username),
+                        and a flag
+                        indicating whether the call is the end of the message (final).</p>
+                    <p className="bg-transparent mt-2 ml-1 max-w-[960px] indent-8">
+                        To ensure we start from the most recent messages, we reverse the previous messages list. The
+                        logic for updating the state is as follows: if the user is the same as the one who sent the last
+                        message and less than 10 seconds have passed since that message started, we simply update their
+                        message with the new text. If more than 10 seconds have passed, we create a new message. If the
+                        user sending the message is different from the user who sent the previous message, a new message
+                        is created. Finally, we reorder the list correctly and update the messages state.</p>
                 </div>
             </div>
         </div>
