@@ -1,9 +1,5 @@
 "use client";
 import React from "../../assets/Logos/react.svg"
-import LoginProto from "../../assets/DKO/loginPrototype.png"
-import LoginProto2 from "../../assets/DKO/loginboxproto2.png"
-import LoginPage from "../../assets/DKO/newLoginPage.png"
-import SignUp from "../../assets/DKO/newSignUpPage.png"
 import CLIMELandingPage from "../../assets/CLIME/CLIME_Landing_page.png"
 import CLIMEChat from "../../assets/CLIME/CLIME_chat.png"
 import Alarm from "../../assets/CLIME/alarms.png"
@@ -13,13 +9,9 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import Image from 'next/image';
-import { useState } from 'react';
-import { IoArrowDown } from 'react-icons/io5';
 import { BsFillSuitDiamondFill } from 'react-icons/bs';
 
 export default function CLIMEPage() {
-
-    const [firstName, setFirstName] = useState("")
 
     return (
         <div className="flex flex-col bg-white text-black w-full min-h-screen mt-[75px] px-96">
