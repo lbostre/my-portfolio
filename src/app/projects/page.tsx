@@ -14,7 +14,6 @@ import JumpseatMobile from "../../../public/Jumpseat/jumpseat_blog.png"
 import ProjectDisplayApp from '@/components/ProjectDisplayApp';
 import CLIMELandingPage from "../../../public/CLIME/CLIME_Landing_page.png"
 import TSCHome from "../../../public/EVH/TSCHome.png"
-import CLIME_Chat from "../../../public/CLIME_Chat.png"
 
 
 export default function Projects() {
@@ -36,7 +35,7 @@ export default function Projects() {
                     nec feugiat nisl
                     pretium
                     fusce." icon={<BsFillSuitDiamondFill size={40}/>} title={'CLIME'}
-                               subtitle={'APP'} image={CLIMELandingPage} image2={CLIME_Chat}
+                               subtitle={'APP'} image={CLIMELandingPage} image2={"/CLIME_Chat.png"}
                                url={"/clime"}/>
             <ProjectDisplayWeb color="#F5E579" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
                     nec feugiat nisl
