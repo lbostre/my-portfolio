@@ -107,7 +107,7 @@ export default function CLIMEPage() {
                                     src="/CLIME/alarms.png"
                                     height={490}
                                     width={255}
-                                    alt={"Clime landing page"}
+                                    alt={"Alarms page"}
                                     className="h-fit"
                                 />
                             </div>
@@ -122,7 +122,7 @@ export default function CLIMEPage() {
                                     src="/CLIME/swipe_alarm.png"
                                     height={490}
                                     width={255}
-                                    alt={"Chat page"}
+                                    alt={"Alarms page with swipe to delete"}
                                     className="h-fit"
                                 />
                             </div>
