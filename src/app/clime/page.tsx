@@ -35,7 +35,7 @@ export default function CLIMEPage() {
                         <div
                             className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
                         <Image
-                            src="/CLIME/CLIME_chat.png"
+                            src="/CLIME/CLIME_Chat.png"
                             height={490}
                             width={255}
                             alt={"Chat page"}
