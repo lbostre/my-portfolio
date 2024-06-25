@@ -13,7 +13,6 @@ import Jumpseat from "../../../public/Jumpseat/jumpseatLandingPage.png"
 import JumpseatMobile from "../../../public/Jumpseat/jumpseat_blog.png"
 import ProjectDisplayApp from '@/components/ProjectDisplayApp';
 import CLIMELandingPage from "../../../public/CLIME/CLIME_Landing_page.png"
-import CLIMEChat from "../../../public/CLIME/CLIME_chat.png"
 import TSCHome from "../../../public/EVH/TSCHome.png"
 
 

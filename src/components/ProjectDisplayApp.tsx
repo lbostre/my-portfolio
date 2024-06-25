@@ -12,8 +12,8 @@ type ProjectDisplayAppProps = {
     subtitle: string;
     description: string;
     color: string;
-    image: StaticImageData | String;
-    image2?: StaticImageData | String;
+    image: string | StaticImageData;
+    image2?: string | StaticImageData;
     url: string;
 }
 
@@ -80,7 +80,7 @@ export default function ProjectDisplayApp({
                                 />
                             </div>
                         </div>
-                        <div
+                        {image2 && <div
                             className="h-fit w-fit border-[6px] border-black rounded-[38px] overflow-clip bg-white self-center mt-8 shadow-2xl relative flex justify-center items-center"
                             onMouseEnter={() => setTarget('display')}
                             onMouseLeave={() => setTarget(null)}>
@@ -88,14 +88,14 @@ export default function ProjectDisplayApp({
                                 <div
                                     className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
                                 <Image
-                                    src={image2!}
+                                    src={image2}
                                     height={490}
                                     width={255}
                                     alt={title}
                                     className="h-fit"
                                 />
                             </div>
-                        </div>
+                        </div>}
                     </div>
                 </Link>
             </div>
