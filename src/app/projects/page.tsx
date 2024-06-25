@@ -14,7 +14,7 @@ import JumpseatMobile from "../../../public/Jumpseat/jumpseat_blog.png"
 import ProjectDisplayApp from '@/components/ProjectDisplayApp';
 import CLIMELandingPage from "../../../public/CLIME/CLIME_Landing_page.png"
 import TSCHome from "../../../public/EVH/TSCHome.png"
-import CLIME_Chat from "./chat.png"
+import CLIME_Chat from "../../../public/CLIME_Chat.png"
 
 
 export default function Projects() {
