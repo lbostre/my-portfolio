@@ -4,28 +4,45 @@ import LoginProto from "../../../public/DKO/loginPrototype.png"
 import LoginProto2 from "../../../public/DKO/loginboxproto2.png"
 import LoginPage from "../../../public/DKO/newLoginPage.png"
 import SignUp from "../../../public/DKO/newSignUpPage.png"
-import DKO from "../../../public/DKO.png"
+import PrevLanding from "../../../public/Jumpseat/prevLanding.png"
+import CustomLight from "../../../public/Jumpseat/customLight.png"
+import CustomDark from "../../../public/Jumpseat/customDark.png"
+import SpringLight from "../../../public/Jumpseat/springLight.png"
+import SpringDark from "../../../public/Jumpseat/springDark.png"
+import Figma from "../../../public/Jumpseat/figmaJumpseat.png"
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import Image from 'next/image';
-import { FaDiamond } from 'react-icons/fa6';
 import { useState } from 'react';
 import { IoArrowDown } from 'react-icons/io5';
+import { ImDiamonds } from 'react-icons/im';
+import { ImageDisplay } from '@/components/ImageDisplay';
+import { BiSolidPlaneAlt } from 'react-icons/bi';
+import Link from 'next/link';
+import { LuArrowUpRight } from 'react-icons/lu';
 
-export default function DeafKidsOutreachPage() {
+export default function JumpseatPage() {
 
     const [firstName, setFirstName] = useState("")
 
     return (
         <div className="flex flex-col bg-white text-black w-full min-h-screen mt-[75px] px-96">
-            <h1 className="text-6xl font-bold">Deaf Kids Outreach</h1>
+            <div className="flex flex-row justify-between items-end">
+                <h1 className="text-6xl font-bold">Jumpseat</h1>
+                <Link target="_blank" href="https://jumpseatapp.com" replace={true}
+                      className="flex flex-row items-center gap-1 border-b-[2px] border-[#304c89] text-[#304c89] mr-3 opacity-75 hover:opacity-100 transition-opacity
+                      ">
+                    <p className="text-lg">See live</p>
+                    <LuArrowUpRight size={22}/>
+                </Link>
+            </div>
             <div className="flex flex-col">
                 <div
                     className={`h-fit w-fit border-8 border-black rounded-3xl overflow-clip bg-white self-center mt-8 shadow-2xl`}>
                     <Image
-                        src={DKO}
+                        src="/Jumpseat/jumpseatLandingPage.png"
                         height={500}
                         width={800}
                         alt={"Deaf kids outreach logo"}
@@ -43,30 +60,32 @@ export default function DeafKidsOutreachPage() {
                     <div className="flex flex-col gap-14">
                         <div>
                             <h3 className="text-2xl font-medium">Problem</h3>
-                            <p>Relying on captions in STEM education hinders the standardization of vocabulary in ASL,
-                                as facial expressions crucial for conveying emphasis and tone are lost, distracting from
-                                visual learning.</p>
+                            <p>Students and parents face financial and time inefficiencies due to dynamic airline
+                                pricing, disorganized shuttle services, and outdated shuttle software, resulting in
+                                suboptimal travel arrangements.</p>
                         </div>
                         <div>
                             <h3 className="text-2xl font-medium">My Role</h3>
-                            <p>Front End Developer</p>
+                            <p>Full Stack Developer</p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-14">
                         <div>
                             <div
                                 className="flex flex-row text-2xl font-medium self-center">
-                                <h2>S</h2><FaDiamond size={18} className="-rotate-90 mt-[7px] mr-[1px] text-[#dd462c]"/>
+                                <h2>S</h2><ImDiamonds size={20}
+                                                      className="mt-[7px] text-[#304c89]"/>
                                 <h2>lution</h2>
                             </div>
-                            <p>Implement ASL as an official language on Khan Academy, standardize video creation, and
-                                create a platform for submitting, reviewing, providing feedback, and approving or
-                                disapproving videos.</p>
+                            <p>A modern, aesthetic website offering AI-powered insights, automated shuttle tasks, and
+                                optimized schedules, helping students and parents save time and money by finding ideal
+                                travel options and ride-sharing partners.</p>
                         </div>
                         <div>
                             <h3 className="text-2xl font-medium">Scope</h3>
-                            <p>August 2021 - May 2022</p>
-                            <p>Team: 8 members</p>
+                            <p>January 2024 - Present</p>
+                            <p>Team: 15 members</p>
+                            <p>WebDev Team: 4 members</p>
                         </div>
                     </div>
                 </div>
@@ -113,83 +132,69 @@ export default function DeafKidsOutreachPage() {
                         <IoArrowDown className="self-center mt-14 text-[#dd462c] animate-bounce" size={100}/>
                     </div>
                 </div>
-                <div>
-                    <div
-                        className={`relative border-4 border-black rounded-3xl overflow-hidden`}>
-                        <Image
-                            src={LoginProto2}
-                            width={960}
-                            alt={"login prototype 2"}
-                        />
-                    </div>
-                    <p className="bg-transparent mt-1 ml-1 max-w-[960px]">Login Prototype #2</p>
-                </div>
-                <div>
-                    <div
-                        className={`relative border-4 border-black rounded-3xl overflow-hidden`}>
-                        <Image
-                            src={LoginPage}
-                            width={960}
-                            alt={"login page"}
-                        />
-                    </div>
-                    <p className="bg-transparent mt-1 ml-1 max-w-[960px]">Final Login page</p>
-                </div>
+                <ImageDisplay alt={"Figma work."}
+                              description={"My work in Figma."}
+                              image={Figma}/>
+                <ImageDisplay alt={"Previous landing/search page."}
+                              description={"Previous landing/search page. The bottom section rotates between different airlines/shuttle services that are offered on our website."}
+                              image={PrevLanding}/>
+                <ImageDisplay alt={"Search page with custom option for dates."}
+                              description={"Search page. This page allows users to specify trip details, including custom dates as shown in the screen above."}
+                              image={CustomLight}/>
+                <ImageDisplay alt={"Search page with break options for dates."}
+                              description={"This search page version allows users to select pre-programmed date options that align with their specific school, making the booking experience easier and less stressful."}
+                              image={SpringLight}/>
+                <ImageDisplay alt={"Search page with custom option for dates, dark mode."}
+                              description={"Dark mode of search page in custom mode."}
+                              image={CustomDark}/>
+                <ImageDisplay alt={"Search page with break options for dates, dark mode."}
+                              description={"Dark mode of search page in break mode."}
+                              image={SpringDark}/>
                 <div className="max-w-[960px]">
-                    <h2 className="text-xl font-medium mb-1">Example Input Code from Sign Up Page</h2>
+                    <h2 className="text-xl font-medium mb-1">Example Code for Gradient Icons</h2>
                     <div className="flex flex-row items-center gap-4">
                         <div className="border-2 border-black rounded-2xl overflow-clip bg-[#fafafa]">
                             <SyntaxHighlighter language="javascript" style={oneLight} className="text-sm">
-                                {".textInput {\n" +
-                                    "    width: 15vw;\n" +
-                                    "    height: 5vh;\n" +
-                                    "    border-radius: 10px;\n" +
-                                    "    border: solid 2px #00cceb;\n" +
-                                    "    outline: none;\n" +
-                                    "    font-size: 16px;\n" +
-                                    "    padding-left: .3vw;\n" +
-                                    "    padding-right: .3vw;\n" +
-                                    "}\n" +
-                                    "\n" +
-                                    ".textInputLabel {\n" +
-                                    "    font-size: 14px;\n" +
-                                    "    display: block;\n" +
-                                    "    margin-left: .5vw;\n" +
-                                    "}"}
+                                {"<svg width=\"0\" height=\"0\">\n" +
+                                    "    <linearGradient\n" +
+                                    "        id=\"blue-gradient\"\n" +
+                                    "        x1=\"100%\"\n" +
+                                    "        y1=\"100%\"\n" +
+                                    "        x2=\"0%\"\n" +
+                                    "        y2=\"0%\"\n" +
+                                    "    >\n" +
+                                    "        <stop stopColor=\"#1e40af\" offset=\"0%\"/>\n" +
+                                    "        <stop stopColor=\"#3a84f5\" offset=\"100%\"/>\n" +
+                                    "    </linearGradient>\n" +
+                                    "</svg>\n" +
+                                    "<BiSolidPlaneAlt\n" +
+                                    "    size={90}\n" +
+                                    "    style={{ fill: \"url(#blue-gradient)\" }}\n" +
+                                    "    aria-hidden=\"true\"\n" +
+                                    "/>"}
                             </SyntaxHighlighter>
                         </div>
-                        <div className="flex flex-col gap-4 items-center">
-                            <div
-                                className="flex flex-col items-center justify-center w-full h-max border-2 border-black rounded-2xl py-[70px]">
-                                <div className="flex flex-col items-start">
-                                    <label>First Name</label>
-                                    <input className="textInput" type="text" placeholder={""} value={firstName}
-                                           onChange={(e) => setFirstName(e.target.value)}/>
-                                </div>
-                            </div>
-                            <div className="border-2 border-black rounded-2xl overflow-clip bg-[#fafafa]">
-                                <SyntaxHighlighter language="javascript" style={oneLight} className="text-sm">
-                                    {"<div className=\"flex flex-col items-start\">\n" +
-                                        "    <label>First Name</label>\n" +
-                                        "    <input className=\"textInput\" type=\"text\" placeholder={\"\"} value={firstName}\n" +
-                                        "    onChange={(e) => setFirstName(e.target.value)}/>\n" +
-                                        "</div>"}
-                                </SyntaxHighlighter>
-                            </div>
+                        <div
+                            className="flex flex-col items-center justify-center w-full h-full border-2 border-black rounded-2xl p-[70px]">
+                            <svg width="0" height="0">
+                                <linearGradient
+                                    id="blue-gradient"
+                                    x1="100%"
+                                    y1="100%"
+                                    x2="0%"
+                                    y2="0%"
+                                >
+                                    <stop stopColor="#1e40af" offset="0%"/>
+                                    <stop stopColor="#3a84f5" offset="100%"/>
+                                </linearGradient>
+                            </svg>
+                            <BiSolidPlaneAlt
+                                size={90}
+                                style={{ fill: "url(#blue-gradient)" }}
+                                aria-hidden="true"
+                            />
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div
-                        className={`relative border-4 border-black rounded-3xl overflow-hidden`}>
-                        <Image
-                            src={SignUp}
-                            width={960}
-                            alt={"login prototype 2"}
-                        />
-                    </div>
-                    <p className="bg-transparent mt-1 ml-1 max-w-[960px]">Sign up page, one of the first pages I
-                        completed using CSS Grid.</p>
                 </div>
                 <div className="flex flex-col w-full gap-2 max-w-[960px]">
                     <h3 className="text-2xl font-semibold">Takeaways</h3>
@@ -208,3 +213,4 @@ export default function DeafKidsOutreachPage() {
         </div>
     );
 }
+
