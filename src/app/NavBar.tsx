@@ -8,6 +8,7 @@ import { MdHexagon } from 'react-icons/md';
 import { IoTriangle } from 'react-icons/io5';
 import { ImDiamonds } from 'react-icons/im';
 import { BsFillSuitDiamondFill } from 'react-icons/bs';
+import NavBarMobileMenu from '@/app/NavBarMobile';
 
 
 export function NavBar() {
@@ -44,7 +45,7 @@ export function NavBar() {
 
     return (
         <header
-            className={`fixed z-10 flex flex-row h-[75px] bg-white text-black px-20 items-center justify-between w-full transition-top ease duration-300`}
+            className={`fixed z-10 flex flex-row h-[75px] bg-white text-black px-5 sm:px-20 items-center justify-between w-full transition-top ease duration-300`}
             style={{ top: topPosition }}
         >
             <h2 className="font-bold text-2xl flex flex-row gap-3 items-center">
@@ -55,6 +56,7 @@ export function NavBar() {
                 <NavLink href="/">Home</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
                 <NavLink href="/about">About</NavLink>
+                <NavBarMobileMenu/>
             </div>
         </header>
     )
