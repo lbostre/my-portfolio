@@ -13,10 +13,9 @@ export default function About() {
                         <h1 className="text-5xl font-semibold">About Me</h1>
                         <p className="text-2xl">Hey there! I'm Leyton, a computer engineering student at Purdue with
                             a
-                            passion for designing and developing websites and apps. I especially love working on
-                            projects that have a meaningful purpose and tackle real-world problems, creating elegant
-                            and
-                            striking visuals in the process.
+                            passion for designing and developing websites and apps. I particularly enjoy working on
+                            projects that have a significant purpose and address real-world issues, all while creating
+                            elegant and striking visuals in the process.
                         </p>
                         <p className="text-2xl">When I'm not coding, you might find me running on the beach or
                             playing games like Rocket League. Thanks for stopping by my portfolio!</p>
