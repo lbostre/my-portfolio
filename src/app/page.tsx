@@ -9,7 +9,7 @@ export default function Home() {
             <div className="flex flex-col min-h-screen p-5 items-center text-black">
                 <div className="flex flex-col items-center mt-14 sm:mt-32 w-full gap-4">
                     <h1 className="hidden sm:flex font-bold text-4xl sm:text-7xl">Hello! I'm <span
-                        className="text-[#dd462c]">Leyton</span>,
+                        className="text-[#dd462c]"> Leyton</span>,
                     </h1>
                     <div
                         className="flex flex-row w-[55%] self-center h-fit justify-center relative mr-8 sm:mr-0">
