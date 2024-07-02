@@ -24,7 +24,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div
-                        className="hidden sm:flex flex-col text-3xl sm:text-5xl leading-tight font-medium text-center bg-red-200">
+                        className="hidden sm:flex flex-col text-3xl sm:text-5xl leading-tight font-medium text-center">
                         <div
                             className="flex flex-row self-center items-center mt-2 w-fit">
                             <p>a&nbsp;</p>
