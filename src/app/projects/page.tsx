@@ -24,7 +24,7 @@ export default function Projects() {
                     nec feugiat nisl
                     pretium
                     fusce." icon={<IoTriangle size={36}/>} title={'Course Rater'}
-                               subtitle={'PROJECT MANAGER & FULL STACK DEVELOPER'} image={CourseRater}
+                               subtitle={'FOUNDER & FULL STACK DEVELOPER'} image={CourseRater}
                                image2={CourseRaterMobile} url="course-rater"/>
             <ProjectDisplayWeb color="#304c89" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
                     nec feugiat nisl

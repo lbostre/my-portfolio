@@ -104,7 +104,7 @@ export default function ProjectDisplayWeb({
                             />
                         </div>
                         <div
-                            className="hidden sm:absolute bottom-[-20px] right-[-15px] h-fit w-fit border-[6px] border-black rounded-[38px] overflow-clip bg-white self-center mt-8 shadow-2xl justify-center items-center py-8">
+                            className="hidden sm:flex absolute bottom-[-20px] right-[-15px] h-fit w-fit border-[6px] border-black rounded-[38px] overflow-clip bg-white self-center mt-8 shadow-2xl justify-center items-center py-8">
                             <div>
                                 <div
                                     className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>
