@@ -18,7 +18,7 @@ export default function Footer() {
                     <Link target={"_blank"} href={"https://www.linkedin.com/in/leytonbostre/"}>LinkedIn</Link>
                     <Link target={"_blank"} href={"https://github.com/lbostre"}>GitHub</Link>
                     <Link href={"mailto:ldbostre@gmail.com"}>Email</Link>
-                    <Link target={"_blank"} href={"/"}>Resume</Link>
+                    <Link target={"_blank"} href={"https://drive.google.com/file/d/1GzzfUqwg-jtL2DOsqe-BD9-trRasjYcp/view?usp=sharing"}>Resume</Link>
                 </div>
             </div>
         </footer>
