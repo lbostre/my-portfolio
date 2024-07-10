@@ -71,6 +71,8 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "tilt": "tilt 10s infinite linear",
+        'spin-slow': 'spin 60s linear infinite',
       },
     },
   },
