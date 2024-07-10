@@ -19,35 +19,20 @@ import CLIME_Chat from "../../../public/CLIME_Chat.png"
 
 export default function Projects() {
     return (
-        <div className="flex flex-col min-h-screen p-5 items-center text-black bg-white">
-            <ProjectDisplayWeb color="#3bb273" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
-                    nec feugiat nisl
-                    pretium
-                    fusce." icon={<IoTriangle size={36}/>} title={'Course Rater'}
-                               subtitle={'FOUNDER & FULL STACK DEVELOPER'} image={CourseRater}
+        <div className="flex flex-col min-h-screen p-3 sm:p-5 items-center text-black bg-white pt-10">
+            <ProjectDisplayWeb color="#3bb273" description="Course Rater provides in-depth reviews and statistics to help Purdue students create optimized schedules." icon={<IoTriangle size={36}/>} title={'Course Rater'}
+                               subtitle={'FULL STACK WEBSITE'} image={CourseRater}
                                image2={CourseRaterMobile} url="course-rater"/>
-            <ProjectDisplayWeb color="#304c89" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
-                    nec feugiat nisl
-                    pretium
-                    fusce." icon={<ImDiamonds size={40}/>} title={'Jumpseat'}
+            <ProjectDisplayWeb color="#304c89" description="Optimize travel planning with AI insights, automated tasks, and ride-sharing for efficient, cost-effective travel solutions." icon={<ImDiamonds size={40}/>} title={'Jumpseat'}
                                subtitle={'FULL STACK WEBSITE'} image={Jumpseat} image2={JumpseatMobile}
                                url={"/jumpseat"}/>
-            <ProjectDisplayApp color="#839ebd" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
-                    nec feugiat nisl
-                    pretium
-                    fusce." icon={<BsFillSuitDiamondFill size={40}/>} title={'CLIME'}
+            <ProjectDisplayApp color="#839ebd" description="App enhances factory safety with alarm detection, clear speech transmission, selective messaging, and section-specific displays for communication." icon={<BsFillSuitDiamondFill size={40}/>} title={'CLIME'}
                                subtitle={'APP'} image={CLIMELandingPage} image2={CLIME_Chat}
                                url={"/clime"}/>
-            <ProjectDisplayWeb color="#F5E579" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
-                    nec feugiat nisl
-                    pretium
-                    fusce." icon={<MdHexagon size={40}/>} title={'Earth History Visualization'}
+            <ProjectDisplayWeb color="#F5E579" description="Improve Time Scale Creator Online for geologists with enhanced accessibility and interactive features for geologic data visualization." icon={<MdHexagon size={40}/>} title={'Earth History Visualization'}
                                subtitle={'FULL STACK WEBSITE'} image={TSCHome}
                                url={"evh"} type={2}/>
-            <ProjectDisplayWeb color="#dd462c" description="Eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor
-                    nec feugiat nisl
-                    pretium
-                    fusce." icon={<FaDiamond size={40}/>} title={'Deaf Kids Outreach'}
+            <ProjectDisplayWeb color="#dd462c" description="Standardize ASL in STEM education with Khan Academy, enhancing video creation and feedback for visual learning." icon={<FaDiamond size={40}/>} title={'Deaf Kids Outreach'}
                                subtitle={'FULL STACK WEBSITE'} image={DKO}
                                type={2} url="dko"/>
         </div>

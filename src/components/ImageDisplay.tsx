@@ -17,7 +17,7 @@ export function ImageDisplay({ image, alt, description, className }: ImageDispla
     return (
         <div className="section">
             <div
-                className={`relative h-[600px] w-[960px] border-4 border-black rounded-3xl overflow-hidden`}>
+                className={`relative sm:h-[600px] sm:w-[960px] w-full h-[225px] border-2 sm:border-4 border-black sm:rounded-3xl rounded-xl overflow-hidden`}>
                 <MacScrollbar className={`h-[600px] w-full overflow-y-auto ${className}`}>
                     <Image
                         src={image}
@@ -28,7 +28,7 @@ export function ImageDisplay({ image, alt, description, className }: ImageDispla
                     />
                 </MacScrollbar>
             </div>
-            <p className="bg-transparent mt-1 ml-1 max-w-[960px]">{description}</p>
+            <p className="bg-transparent mt-1 ml-1 max-w-[960px] sm:text-md text-sm">{description}</p>
         </div>
     );
 }

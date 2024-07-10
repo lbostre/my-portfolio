@@ -26,20 +26,19 @@ import Image from 'next/image';
 
 export default function CourseRaterPage() {
     return (
-        <div className="flex flex-col bg-white text-black w-full min-h-screen mt-[75px] px-96">
+        <div className="flex flex-col bg-white text-black w-full min-h-screen mt-[75px] sm:px-96 px-4">
             <div className="flex flex-row justify-between items-end">
-                <h1 className="text-6xl font-bold">Course Rater</h1>
+                <h1 className="text-4xl sm:text-6xl font-bold">Course Rater</h1>
                 <Link target="_blank" href="https://courserater.net" replace={true}
                       className="flex flex-row items-center gap-1 border-b-[2px] border-[#3bb273] text-[#3bb273] mr-3 opacity-75 hover:opacity-100 transition-opacity
                       ">
-                    <p className="text-lg">See live</p>
+                    <p className="sm:text-lg">See live</p>
                     <LuArrowUpRight size={22}/>
                 </Link>
             </div>
             <WebPhoneLayout alt={"Course Rater Rating Page"} alt2={"Course Rater Home Page Mobile View"}
                             image={CourseRater} image2={CourseRaterMobile} padding={true}/>
-
-            <div className="flex flex-row mt-14 gap-32 w-full ">
+            <div className="hidden sm:flex flex-row mt-14 gap-32 w-full">
                 <div
                     className="flex flex-row [writing-mode:vertical-lr] text-5xl font-medium self-center">
                     <h2>Over</h2><IoTriangle size={33} className="-rotate-90 ml-[4px] text-[#3bb273]"/><h2>iew</h2>
@@ -54,7 +53,7 @@ export default function CourseRaterPage() {
                         </div>
                         <div>
                             <h3 className="text-2xl font-medium">My Role</h3>
-                            <p>Project Manager and Full Stack Developer</p>
+                            <p>Founder and Full Stack Developer</p>
                         </div>
                         <div>
                             <h3 className="text-2xl font-medium">Tech Stack</h3>
@@ -113,6 +112,76 @@ export default function CourseRaterPage() {
                     </div>
                 </div>
             </div>
+            <div className="sm:hidden flex flex-col mt-8 gap-5 w-full">
+                <div
+                    className="flex flex-row text-3xl font-medium self-center">
+                    <h2>Over</h2><IoTriangle size={21} className="rotate-180 mt-[10px] text-[#3bb273]"/><h2>iew</h2>
+                </div>
+                <div className="flex flex-col gap-5">
+                    <div>
+                        <h3 className="text-xl font-medium">Problem</h3>
+                        <p>Students face difficulties in creating optimized schedules due to a lack of comprehensive
+                            course reviews and high-quality information, highlighting the need for a website
+                            offering in-depth reviews and statistical insights.</p>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-medium">Solution</h3>
+                        <p>Course Rater offers in-depth course reviews and valuable statistics to help Purdue
+                            students
+                            create efficient and manageable schedules, saving them time and improving their academic
+                            planning.</p>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-medium">My Role</h3>
+                        <p>Founder and Full Stack Developer</p>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-medium">Scope</h3>
+                        <p>Ongoing project since May 2022</p>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-medium">Tech Stack</h3>
+                        <div className="flex flex-row gap-5">
+                            <div className="flex flex-col items-center w-fit">
+                                <Image
+                                    src={React}
+                                    height={40}
+                                    width={40}
+                                    alt={"React logo"}
+                                />
+                                <p>React</p>
+                            </div>
+                            <div className="flex flex-col items-center w-fit">
+                                <Image
+                                    src={Express}
+                                    height={40}
+                                    width={40}
+                                    alt={"Express logo"}
+                                />
+                                <p>Express</p>
+                            </div>
+                            <div className="flex flex-col items-center w-fit">
+                                <Image
+                                    src={Node}
+                                    height={36}
+                                    width={36}
+                                    alt={"Nodejs logo"}
+                                />
+                                <p>NodeJS</p>
+                            </div>
+                            <div className="flex flex-col items-center w-fit">
+                                <Image
+                                    src={Mongo}
+                                    height={40}
+                                    width={40}
+                                    alt={"MongoDB logo"}
+                                />
+                                <p>MongoDB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="flex flex-col items-center mt-8 gap-10 pt-8">
                 <ImageDisplay alt={"Course rater home page"}
                               description={"Home page for Course Rater. I opted for a simple and sleek design."}
@@ -124,13 +193,13 @@ export default function CourseRaterPage() {
                               description={"A rating page for ECE 20002, a notoriously hard class. This page is available for every Purdue course, featuring grade statistics sorted by semester and professor. Each course page also allows anonymous ratings through a short form submission."}
                               image={Class} className="pb-8"/>
                 <div className="flex flex-col w-full gap-2 max-w-[960px]">
-                    <h3 className="text-2xl font-semibold">About the design</h3>
-                    <p className="indent-8">As someone who gets very invested in the aesthetics of a website, I
+                    <h3 className="text-xl sm:text-2xl font-semibold">About the design</h3>
+                    <p className="sm:indent-8 indent-4">As someone who gets very invested in the aesthetics of a website, I
                         made numerous iterations during the design process. Starting with the color scheme, I wanted
                         something that would stand out, and the pink achieves just that. Initially, I considered a
                         light blue from a logo on one of my favorite t-shirts. I then put that blue color compliment
                         generator and which then suggested this pink as well as the yellow.</p>
-                    <p className="indent-8">Style wise, I went for something modern and minimal. "Neobrutalism" is the
+                    <p className="sm:indent-8 indent-4">Style wise, I went for something modern and minimal. "Neobrutalism" is the
                         proper name for the style of the website. This type of style includes high contrasting colors,
                         prominent black outlines, and sharp shadows. This style also allows for extensive freedom and
                         creativity, portrayed by the button you can find further down this page. I often obsess over
@@ -154,9 +223,9 @@ export default function CourseRaterPage() {
 
                 <div className="max-w-[960px]">
                     <h2 className="text-xl font-medium mb-1">Example Button Component from Course-Rater</h2>
-                    <div className="flex flex-row items-center gap-4">
-                        <div className="border-2 border-black rounded-2xl overflow-clip bg-[#fafafa]">
-                            <SyntaxHighlighter language="javascript" style={oneLight} className="text-sm">
+                    <div className="flex sm:flex-row flex-col items-center sm:gap-4 gap-2 w-[358px] sm:w-full">
+                        <div className="border-2 border-black rounded-xl sm:rounded-2xl overflow-clip bg-[#fafafa] w-full">
+                            <SyntaxHighlighter language="javascript" style={oneLight} className="sm:text-sm text-xs">
                                 {"export const Button = ({ type = 'button', text, onClick }) => {\n" +
                                     "  return (\n" +
                                     "    <>\n" +
@@ -181,9 +250,9 @@ export default function CourseRaterPage() {
                                     "};"}
                             </SyntaxHighlighter>
                         </div>
-                        <div className="flex flex-col gap-4 items-center ">
+                        <div className="flex flex-col gap-2 sm:gap-4 items-center w-full">
                             <div
-                                className="flex items-center justify-center w-full h-max border-2 border-black rounded-2xl py-[94px]">
+                                className="flex items-center justify-center w-full h-max border-2 border-black rounded-xl sm:rounded-2xl sm:py-[94px] py-10">
                                 <button
                                     className="p-2 border-2 border-black rounded-md h-fit w-fit"
                                     id="button"
@@ -192,8 +261,8 @@ export default function CourseRaterPage() {
                                     <p>Click me!</p>
                                 </button>
                             </div>
-                            <div className="border-2 border-black rounded-2xl overflow-clip bg-[#fafafa]">
-                                <SyntaxHighlighter language="javascript" style={oneLight} className="text-sm">
+                            <div className="border-2 border-black rounded-xl sm:rounded-2xl overflow-clip bg-[#fafafa] w-full">
+                                <SyntaxHighlighter language="javascript" style={oneLight} className="sm:text-sm text-xs">
                                     {"#button {\n" +
                                         "  border: 2px solid black;\n" +
                                         "  box-shadow: 4px 4px #000000;\n" +

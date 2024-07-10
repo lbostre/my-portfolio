@@ -12,7 +12,7 @@ export function WebPhoneLayout({ image, image2, alt, alt2, padding }: WebPhoneLa
     return (
         <div className="relative w-full max-w-[1000px] self-center">
             <div
-                className={`h-fit w-fit border-8 border-black rounded-3xl overflow-clip bg-white self-center mt-8 shadow-2xl ${padding ? "py-6" : ""}`}>
+                className={`h-fit w-fit border-4 sm:border-8 border-black rounded-2xl sm:rounded-3xl overflow-clip bg-white self-center mt-8 shadow-2xl ${padding ? "py-6" : ""}`}>
                 <Image
                     src={image}
                     height={500}
@@ -22,7 +22,7 @@ export function WebPhoneLayout({ image, image2, alt, alt2, padding }: WebPhoneLa
                 />
             </div>
             <div
-                className="absolute bottom-[-20px] right-[-15px] h-fit w-fit border-[6px] border-black rounded-[38px] overflow-clip bg-white self-center mt-8 shadow-2xl flex justify-center items-center py-8">
+                className="hidden sm:flex absolute bottom-[-20px] right-[-15px] h-fit w-fit border-[6px] border-black rounded-[38px] overflow-clip bg-white self-center mt-8 shadow-2xl justify-center items-center py-8">
                 <div>
                     <div
                         className="h-6 w-20 bg-black absolute top-[7px] left-1/2 transform -translate-x-1/2 rounded-full"/>

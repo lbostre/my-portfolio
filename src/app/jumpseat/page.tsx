@@ -28,19 +28,19 @@ export default function JumpseatPage() {
     const [firstName, setFirstName] = useState("")
 
     return (
-        <div className="flex flex-col bg-white text-black w-full min-h-screen mt-[75px] px-96">
+        <div className="flex flex-col bg-white text-black w-full min-h-screen mt-[75px] sm:px-96 px-4">
             <div className="flex flex-row justify-between items-end">
-                <h1 className="text-6xl font-bold">Jumpseat</h1>
+                <h1 className="text-4xl sm:text-6xl font-bold">Jumpseat</h1>
                 <Link target="_blank" href="https://jumpseatapp.com" replace={true}
                       className="flex flex-row items-center gap-1 border-b-[2px] border-[#304c89] text-[#304c89] mr-3 opacity-75 hover:opacity-100 transition-opacity
                       ">
-                    <p className="text-lg">See live</p>
+                    <p className="sm:text-lg">See live</p>
                     <LuArrowUpRight size={22}/>
                 </Link>
             </div>
             <div className="flex flex-col">
                 <div
-                    className={`h-fit w-fit border-8 border-black rounded-3xl overflow-clip bg-white self-center mt-8 shadow-2xl`}>
+                    className={`h-fit w-fit border-4 sm:border-8 border-black rounded-2xl sm:rounded-3xl overflow-clip bg-white self-center mt-8 shadow-2xl`}>
                     <Image
                         src="/Jumpseat/jumpseatLandingPage.png"
                         height={500}
@@ -51,7 +51,7 @@ export default function JumpseatPage() {
                 </div>
             </div>
 
-            <div className="flex flex-row mt-14 gap-32 w-full ">
+            <div className="hidden sm:flex flex-row mt-14 gap-32 w-full">
                 <div
                     className="flex flex-row [writing-mode:vertical-lr] text-5xl font-medium self-center">
                     <h2>Overview</h2>
@@ -90,48 +90,41 @@ export default function JumpseatPage() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-center mt-8 gap-10 pt-8">
-                <div className="flex flex-col w-full gap-2 max-w-[960px]">
-                    <h3 className="text-2xl font-semibold">Background</h3>
-                    <p className="indent-8">Deaf Kids Outreach was the first "real world" project that I worked on. I
-                        got this opportunity through the Engineering Projects in Community Service program at Purdue
-                        University. This was the first project where I used React along with other website developing
-                        tools like flexbox and CSS grid.
-                    </p>
-                    <p className="indent-8">Having been very inexperienced at the time, my responsibilities were to
-                        create the login and signup pages.
-                    </p>
+            <div className="sm:hidden flex flex-col mt-8 gap-4 w-full">
+                <div
+                    className="flex text-3xl font-medium self-center">
+                    <h2>Overview</h2>
                 </div>
-                <div className="flex flex-row w-full max-w-[960px] gap-8">
+                    <div>
+                        <h3 className="text-xl font-medium">Problem</h3>
+                        <p>Students and parents face financial and time inefficiencies due to dynamic airline
+                            pricing, disorganized shuttle services, and outdated shuttle software, resulting in
+                            suboptimal travel arrangements.</p>
+                    </div>
                     <div>
                         <div
-                            className={`relative border-4 border-black rounded-3xl overflow-hidden`}>
-                            <Image
-                                src={LoginProto}
-                                height={LoginProto.height}
-                                width={LoginProto.width}
-                                alt={"login prototype"}
-                                className="w-full object-cover"
-                            />
+                            className="flex flex-row text-xl font-medium self-center">
+                            <h2>S</h2><ImDiamonds size={18}
+                                                  className="mt-[4px] text-[#304c89]"/>
+                            <h2>lution</h2>
                         </div>
-                        <p className="bg-transparent mt-1 ml-1 max-w-[960px]">Login Prototype #1</p>
+                        <p>A modern, aesthetic website offering AI-powered insights, automated shuttle tasks, and
+                            optimized schedules, helping students and parents save time and money by finding ideal
+                            travel options and ride-sharing partners.</p>
                     </div>
-                    <div className="w-[50%] flex flex-col">
-                        <h5 className="font-medium">Login Prototype #1</h5>
-                        <p className="bg-transparent indent-8"> At this stage of
-                            development, we decided
-                            against
-                            using any authentication libraries. Instead, we planned to store usernames directly and hash
-                            passwords for security purposes.</p>
-                        <h5 className="font-medium  mt-3">Login Prototype #2</h5>
-                        <p className="bg-transparent indent-8">At this stage, we had completed our first design review,
-                            presenting our progress and future plans to our partners and other reviewers. One reviewer
-                            suggested using an authentication library, which we then discussed as a team and agreed was
-                            a good idea. We chose Google's authentication due to its large user base. As a result, I
-                            implemented Google login and sign-up buttons on the login page.</p>
-                        <IoArrowDown className="self-center mt-14 text-[#dd462c] animate-bounce" size={100}/>
+                    <div>
+                        <h3 className="text-xl font-medium">My Role</h3>
+                        <p>Full Stack Developer</p>
                     </div>
+                <div>
+                    <h3 className="text-xl font-medium">Scope</h3>
+                    <p>January 2024 - Present</p>
+                    <p>Team: 15 members</p>
+                    <p>WebDev Team: 4 members</p>
                 </div>
+            </div>
+            <div className="flex flex-col items-center mt-8 gap-5 sm:gap-10 pt-8">
+
                 <ImageDisplay alt={"Figma work."}
                               description={"My work in Figma."}
                               image={Figma}/>
@@ -151,10 +144,10 @@ export default function JumpseatPage() {
                               description={"Dark mode of search page in break mode."}
                               image={SpringDark}/>
                 <div className="max-w-[960px]">
-                    <h2 className="text-xl font-medium mb-1">Example Code for Gradient Icons</h2>
-                    <div className="flex flex-row items-center gap-4">
-                        <div className="border-2 border-black rounded-2xl overflow-clip bg-[#fafafa]">
-                            <SyntaxHighlighter language="javascript" style={oneLight} className="text-sm">
+                    <h2 className="text-lg sm:text-xl font-medium mb-1">Example Code for Gradient Icons</h2>
+                    <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+                        <div className="border-2 border-black rounded-2xl overflow-clip bg-[#fafafa] w-[358px] sm:w-full">
+                            <SyntaxHighlighter language="javascript" style={oneLight} className="sm:text-sm text-xs">
                                 {"<svg width=\"0\" height=\"0\">\n" +
                                     "    <linearGradient\n" +
                                     "        id=\"blue-gradient\"\n" +
@@ -175,7 +168,7 @@ export default function JumpseatPage() {
                             </SyntaxHighlighter>
                         </div>
                         <div
-                            className="flex flex-col items-center justify-center w-full h-full border-2 border-black rounded-2xl p-[70px]">
+                            className="flex flex-col items-center justify-center w-full h-full border-2 border-black rounded-2xl p-8 sm:p-[70px]">
                             <svg width="0" height="0">
                                 <linearGradient
                                     id="blue-gradient"
@@ -195,19 +188,6 @@ export default function JumpseatPage() {
                             />
                         </div>
                     </div>
-                </div>
-                <div className="flex flex-col w-full gap-2 max-w-[960px]">
-                    <h3 className="text-2xl font-semibold">Takeaways</h3>
-                    <p className="indent-8">Taking this class in my first year of college significantly contributed to
-                        my learning throughout my college career. It was my first experience working with a large group
-                        on a sizable coding project. I gained valuable insights into various programming practices in
-                        web development and, more importantly, greatly enhanced my communication skills.
-                    </p>
-                    <p className="indent-8">As a young and ambitious student, I learned that large-scale projects
-                        require time and patience. Initially, I saw projects as ambitious goals to tackle head-on with
-                        friends, spending hours daily on contributions but rarely completing them. This project taught
-                        me the importance of planning, documentation, and, most importantly in my opinion, iteration.
-                    </p>
                 </div>
             </div>
         </div>

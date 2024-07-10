@@ -32,7 +32,7 @@ export default function ProjectDisplayApp({
     return (
         <div className="w-full flex flex-col items-center">
             <div className="h-[1px] w-[92%] bg-gray-300"/>
-            <div className="flex flex-col text-black w-full py-20 max-w-[1000px]">
+            <div className="flex flex-col text-black w-full py-10 sm:py-20 max-w-[1000px]">
                 <div className="hidden sm:flex flex-row justify-between">
                     <div className="flex flex-col">
                         <div className="flex flex-row items-center gap-2">
