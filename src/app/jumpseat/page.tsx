@@ -1,15 +1,12 @@
 "use client";
 import React from "../../../public/Logos/react.svg"
-import LoginProto from "../../../public/DKO/loginPrototype.png"
-import LoginProto2 from "../../../public/DKO/loginboxproto2.png"
-import LoginPage from "../../../public/DKO/newLoginPage.png"
-import SignUp from "../../../public/DKO/newSignUpPage.png"
 import PrevLanding from "../../../public/Jumpseat/prevLanding.png"
 import CustomLight from "../../../public/Jumpseat/customLight.png"
 import CustomDark from "../../../public/Jumpseat/customDark.png"
 import SpringLight from "../../../public/Jumpseat/springLight.png"
 import SpringDark from "../../../public/Jumpseat/springDark.png"
 import Figma from "../../../public/Jumpseat/figmaJumpseat.png"
+import page404 from "../../../public/Jumpseat/404page.png"
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -189,6 +186,9 @@ export default function JumpseatPage() {
                         </div>
                     </div>
                 </div>
+                <ImageDisplay alt={"404 page"}
+                              description={"404 page."}
+                              image={page404}/>
             </div>
         </div>
     );
