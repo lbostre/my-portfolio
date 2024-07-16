@@ -18,11 +18,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body style={inter.style} className="flex flex-col">
-        <NavBar/>
-        {children}
-        <Footer/>
-        </body>
+            <body style={inter.style} className="flex flex-col">
+                <NavBar/>
+                {children}
+                <Footer/>
+            </body>
         </html>
     );
 }
