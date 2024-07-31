@@ -128,9 +128,6 @@ export default function CLIMEPage() {
                         because I remember being in their position, and it was gratifying to be the person who could
                         offer support and guidance.
                     </p>
-                    <p className="sm:indent-8 indent-4">Having been very inexperienced at the time, my responsibilities were to
-                        create the login and signup pages.
-                    </p>
                 </div>
                 <div>
                     <div className="flex flex-row justify-center gap-3 sm:gap-14">
