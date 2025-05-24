@@ -1,14 +1,16 @@
-import "./shapes.css"
-import Link from 'next/link';
+import "./shapes.css";
+import Link from "next/link";
 
 type SquareProps = {
-    className?: string
-}
+    className?: string;
+};
 
 export function Square({ className }: SquareProps) {
     return (
-        <Link href="/dko">
-            <div className={`square ${className} cursor-pointer hover:scale-[1.12]`}/>
+        <Link href="/tcc">
+            <div
+                className={`square ${className} cursor-pointer hover:scale-[1.12]`}
+            />
         </Link>
-    )
+    );
 }
