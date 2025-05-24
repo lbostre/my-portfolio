@@ -1,11 +1,7 @@
 "use client";
 import React from "../../../public/Logos/react.svg";
 
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-
 import Image from "next/image";
-import { BsFillSuitDiamondFill } from "react-icons/bs";
 import { FaDiamond } from "react-icons/fa6";
 
 import team from "../../../public/TCC/team.jpg";
@@ -15,7 +11,7 @@ import figma from "../../../public/TCC/figma.png";
 
 export default function TCCPage() {
     return (
-        <div className="flex flex-col bg-white text-black w-full min-h-screen mt-[75px] sm:px-96 px-4">
+        <div className="flex flex-col bg-white text-black w-full min-h-screen mt-[75px] sm:px-96 px-4 ">
             <h1 className="text-2xl sm:text-5xl font-bold">
                 Tippy County Connect
             </h1>
