@@ -16,8 +16,8 @@ import ProjectDisplayApp from "@/components/ProjectDisplayApp";
 import CLIMELandingPage from "../../../public/CLIME/CLIME_Landing_page.png";
 import TSCHome from "../../../public/EVH/TSCHome.png";
 import CLIME_Chat from "../../../public/CLIME_Chat.png";
-import TCCMap from "../../../public/tcc/map.png";
-import TCCList from "../../../public/tcc/list.png";
+import TCCMap from "../../../public/TCC/map.png";
+import TCCList from "../../../public/TCC/list.png";
 
 export default function Projects() {
     return (
